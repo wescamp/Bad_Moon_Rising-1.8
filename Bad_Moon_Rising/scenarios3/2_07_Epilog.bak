@@ -1,0 +1,246 @@
+#textdomain wesnoth-Bad_Moon_Rising
+[scenario]
+	id="2_07_Epilogue"
+	name= _ "Epilogue"
+	map_data="{~add-ons/Bad_Moon_Rising/maps/2_07_Epilogue.map}"
+	next_scenario=null
+	victory_when_enemies_defeated=no
+	{TURNS 42 38 34}
+	[music]
+#	name="wanderer.ogg"
+	name="triumph.ogg"
+	[/music]
+
+	{BMR_DAYSHORT}
+
+
+[story]
+   [part]
+	story= _ "The explosion was quite powerful and visible from many miles away, but the cataclysmic erruption was avoided. The dire threat of Ares' forces marching down on the civilizations to the south was gone, and the nations of the world remained blissfully unaware of how close they had all come to oblivion."
+	background="misc/BMRexplosion.png"
+   [/part]
+   [part]
+	story= _ "However, not everyone involved in recent events perished in the explosion."
+	background="misc/BMRominous.png"
+   [/part]
+   [part]
+	story= _ "The north had grown quiet, but the ancient battles were not necessarily over..." 
+	background="misc/BMRtundra.png"
+   [/part]
+[/story]
+
+	[event]
+	name=prestart
+	[store_unit]
+	    [filter]
+		id=Dummy
+	    [/filter]
+	    kill=yes
+	[/store_unit]
+	[/event]
+
+	[event]
+	name=start
+	[music]
+	name=wanderer.ogg
+	immediate=yes
+	[/music]
+	[message]
+	speaker=Ponce
+	message= _ "This is where I saw her, we should be careful."  
+	[/message]
+	[message]
+	speaker=Roland
+	message= _ "Careful? Last night, you wouldn't shut up about how beautiful she was."
+	[/message]
+	[message]
+	speaker=Ponce
+	message= _ "Well, I was drunk. Now I tell you we should be very careful. From what I saw-"
+	[/message]
+	[unit]
+	side=2
+	type=Primeval Nemesis
+	id=Nemesis
+	name="Nemesis"
+	random_traits=yes
+	x,y=15,25
+	[/unit]
+	{MOVE_UNIT id=Nemesis 9 17}
+	[message]
+	speaker=Taryl
+	message= _ "Ah, you were right! Look at that armor, it's so much gold!"
+	[/message]
+	[message]
+	speaker=Roland
+	message= _ "Ha! Only you would be looking at the armor."
+	[/message]
+	{MOVE_UNIT id=Ponce 3 13}
+	{MODIFY_UNIT id=Ponce facing se}
+	[message]
+	speaker=Ponce
+	message= _ "(whisper)  What's wrong with you two? Take cover!"  
+	[/message]
+	{MOVE_UNIT id=Nemesis 6 14}
+	{MODIFY_UNIT id=Nemesis facing nw}
+	[animate_unit]
+	    flag=attack
+	    [filter]
+		id=Nemesis
+	    [/filter]
+	    [filter_second]
+		id=Roland
+	    [/filter_second]
+		[primary_attack]
+		    name=sword
+		[/primary_attack]
+	    hits=yes
+	[/animate_unit]
+	[kill]
+	id=Roland
+	animate=yes
+	[/kill]		
+	{MODIFY_UNIT id=Nemesis facing ne}
+	[animate_unit]
+	    flag=attack
+	    [filter]
+		id=Nemesis
+	    [/filter]
+	    [filter_second]
+		id=Taryl
+	    [/filter_second]
+		[primary_attack]
+		    name=psyche
+		[/primary_attack]
+	    hits=yes
+	[/animate_unit]
+	[kill]
+	id=Taryl
+	animate=yes
+	[/kill]
+	[message]
+	speaker=Ponce
+	message= _ "-(gulp)-"
+	[/message]
+	{MOVE_UNIT id=Ponce 2 10}
+	{MOVE_UNIT id=Nemesis 2 11}
+	[message]
+	speaker=Ponce
+	message= _ "Ah! No! ... Who are you?"
+	[/message]
+	[message]
+	speaker=Nemesis
+	message= _ "'Who are you'"
+	[/message]
+	{MOVE_UNIT id=Ponce 2 9}
+	[message]
+	speaker=Ponce
+	message= _ "Why do you mock me, what do you want?"
+	[/message]
+	[message]
+	speaker=Nemesis
+	message=_  "'Why, what'... Kheh sestha... Nyx, sestha Symia..."
+	[/message]
+	[message]
+	speaker=Ponce
+	message= _ "Oh, you can't speak our language?"
+	[/message]
+	{MOVE_UNIT id=Nemesis 2 10}
+	[message]
+	speaker=Ponce
+	message= _ "No, no, please don't kill me... That's right, easy does it."
+	[/message]
+	[message]
+	speaker=Nemesis
+	message=_  "Symia, ote sphalera. Nede pa sakos ondarte e morah ask."
+	[/message]
+	[message]
+	speaker=Ponce
+	message= _ "I ... don't know what you are saying, but I know others who might." 
+	[/message]
+	{MOVE_UNIT id=Ponce 2 8}
+	[message]
+	speaker=Ponce
+	message= _ "Come, see I don't run? Follow me, come this way."
+	[/message]
+	[message]
+	speaker=Nemesis
+	message=_  "Rahdna... Hahaha!"
+	[/message]
+	[music]
+	name=suspense.ogg
+	immediate=yes
+	[/music]
+	[message]
+	speaker=Nemesis
+	message= _ "I've learned to speak your talk well enough. We will go visit your wise friends, there is so much to talk about..."
+	[/message]
+	{MOVE_UNIT id=Ponce 1 6}
+	[kill]
+	id=Ponce
+	[/kill]
+	{MOVE_UNIT id=Nemesis 1 6}
+	[kill]
+	id=Nemesis
+	[/kill]
+	
+	[endlevel]
+#	result=continue_no_save
+	{CONTINUE_NO_SAVE}
+	music="legends_of_the_north.ogg"
+	[/endlevel]
+	[/event]
+
+# does this stop the game over crap?
+	[side]
+	side=1
+	type=Spearman
+	id=Dummy
+	controller=human
+	canrecruit=yes
+	recruit=
+	[/side]	
+
+
+	[side]
+	side=2
+	no_leader=yes
+	canrecruit=no
+	controller=ai
+	fog=no
+	[unit]
+	type=Peasant
+	id=Roland
+	name="Roland"
+	random_traits=yes
+	x,y=5,14
+	[/unit]
+	[unit]
+	type=Woodsman
+	id=Ponce
+	name="Ponce"
+	random_traits=yes
+	x,y=4,14
+	[/unit]
+	[unit]
+	type=Ruffian
+	id=Taryl
+	name="Taryl"
+	random_traits=yes
+	x,y=7,14
+	[/unit]
+	[/side]
+
+	[side]
+	side=3
+	no_leader=yes
+	canrecruit=no
+	controller=ai
+	fog=no
+	[/side]
+	
+
+	[event]
+	name=start
+	[/event]
+
+[/scenario]
