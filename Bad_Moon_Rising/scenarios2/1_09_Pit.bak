@@ -274,37 +274,26 @@
 	[/side]
 
 	[side]
-   {ai/aliases/stable_singleplayer.cfg}
-   [ai]
-       {MODIFY_AI_ADD_CANDIDATE_ACTION 2 main_loop (
-         [candidate_action]
-             id=push_to_destination
-             engine=fai
-             name=push_to_destination
-             type=movement
-             #   the intent of the formula is "let all units do the move
-             #   before combat". we can use if() to limit the units who are
-             #   affected. e.g.
-             #   if(me.id='overpowered_unit',{AI_CA_COMBAT_SCORE}+10,0)
-             evaluation="if(me.id='Scarrion',{AI_CA_COMBAT_SCORE}+10,0)"
-             #   the intent of the formula is "move from my current location
-             #   to the location which is closest to my destination,
-             #   ignoring enemy units" We'll end next to them if they block
-             #   our way, and we'll fight in the combat phase normally.
-             action="move(me.loc,choose(unit_moves(me.loc),'mloc',-sum(map(simplest_path(mloc,loc(29,18),me.loc),'path_location', movement_cost( me, path_location ) ))) )"
-         [/candidate_action]
-       )}
-   [/ai]
-	no_leader=yes
-	side=4
-	shroud=no
-	team_name=evil
-	[unit]
 	type=Dark Messiah
 	id=Scarrion
 	name= _ "Scarrion"
-	x,y=23,48
-	[/unit]
+	side=4
+	canrecruit=yes
+	shroud=no
+	{GOLD 150 225 350}
+	{INCOME 4 6 8}
+	team_name=evil
+	[ai]
+# trying to keep Scarrion moving
+	aggression=-1.0
+	grouping=offensive
+#	recruitment_pattern=fighter,scout
+	caution=1.6
+	village_value=0
+	[leader_goal]
+	x,y=29,18
+	[/leader_goal]
+	[/ai]
 	[unit]
 	type=Primevalist Fanatic
 	x,y=9,39
