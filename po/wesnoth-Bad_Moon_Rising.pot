@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2010-01-25 16:03+0100\n"
+"POT-Creation-Date: 2010-02-03 02:29+0100\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -66,7 +66,7 @@ msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising_I
 #: ./Bad_Moon_Rising/_main.cfg:36
-msgid "A soldier of Weldyn is captured by a necromancer. His attempt to escape sets events in motion that could have consequences for all life on the planet. (Quick campaign, no recruiting.  version 0.9.4)"
+msgid "A soldier of Weldyn is captured by a necromancer. His attempt to escape sets events in motion that could have consequences for all life on the planet. (Quick campaign, no recruiting.  version 0.9.5)"
 msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising
@@ -99,7 +99,7 @@ msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising
 #: ./Bad_Moon_Rising/_main.cfg:58
-msgid "The best of intentions often do not lead to the best results. The new King was cruel, but the rebellion unwittingly unleashes an even greater evil on the world. (version 0.9.4)"
+msgid "The best of intentions often do not lead to the best results. The new King was cruel, but the rebellion unwittingly unleashes an even greater evil on the world. (version 0.9.5)"
 msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising_III
@@ -114,7 +114,7 @@ msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising_III
 #: ./Bad_Moon_Rising/_main.cfg:80
-msgid "Battles were won, but the war is not over. The Ukians find they did not fully understand just how much danger the world is in. (version 0.9.4)"
+msgid "Battles were won, but the war is not over. The Ukians find they did not fully understand just how much danger the world is in. (version 0.9.5)"
 msgstr ""
 
 #. [about]
@@ -570,7 +570,7 @@ msgid "Reach the North edge of the map"
 msgstr ""
 
 #. [objective]: condition=lose
-#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:40 ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1203 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:42 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:39 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:332 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:42 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:45 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:516 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:47 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:99 ./Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:67 ./Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:57 ./Bad_Moon_Rising/scenarios1/0_05_Payback.cfg:57 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:40 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:625
+#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:40 ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1203 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:42 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:39 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:334 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:42 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:45 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:516 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:47 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:46 ./Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:67 ./Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:57 ./Bad_Moon_Rising/scenarios1/0_05_Payback.cfg:57 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:40 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:625
 msgid "Time runs out"
 msgstr ""
 
@@ -2389,7 +2389,7 @@ msgstr ""
 
 #. [message]: speaker=C_Belleros
 #. [message]: speaker=Duval
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:539 ./Bad_Moon_Rising/scenarios2/1_06_Guardian.cfg:350
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:547 ./Bad_Moon_Rising/scenarios2/1_06_Guardian.cfg:350
 msgid "Silence!"
 msgstr ""
 
@@ -2500,7 +2500,7 @@ msgid "Defeat Enemy Leaders"
 msgstr ""
 
 #. [objective]: condition=lose
-#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:28 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:38 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:499 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:514 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:34 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:31 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:320 ./Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:27 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:987 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:38 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:34 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:33 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:504 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:35 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:95 ./Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:59 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:35 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:793 ./Bad_Moon_Rising/scenarios2/1_08_Rumble.cfg:30 ./Bad_Moon_Rising/scenarios2/1_09_Ruin.cfg:57 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:28 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:617 ./Bad_Moon_Rising/scenarios2/1_07_Crush.cfg:57 ./Bad_Moon_Rising/scenarios2/1_09_Pit.cfg:55
+#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:28 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:38 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:499 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:514 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:34 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:31 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:322 ./Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:27 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:987 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:38 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:34 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:33 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:504 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:35 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:42 ./Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:59 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:35 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:793 ./Bad_Moon_Rising/scenarios2/1_08_Rumble.cfg:30 ./Bad_Moon_Rising/scenarios2/1_09_Ruin.cfg:57 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:28 ./Bad_Moon_Rising/scenarios2/1_10_NewHome.cfg:617 ./Bad_Moon_Rising/scenarios2/1_07_Crush.cfg:57 ./Bad_Moon_Rising/scenarios2/1_09_Pit.cfg:55
 msgid "Death of Belleros"
 msgstr ""
 
@@ -2513,7 +2513,7 @@ msgstr ""
 #. [side]: type=Ukian Commander, id=Belleros
 #. [unit]: type=Ukian Subcommander, id=Belleros
 #. [unit]: type=Ukian Officer, id=Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:129 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:75 ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:125 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:180 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:76 ./Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:85 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:151 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:105 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:90 ./Bad_Moon_Rising/scenarios3/2_04_West.cfg:51 ./Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:122 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:43 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:142 ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:61 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:87 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:82 ./Bad_Moon_Rising/scenarios2/1_07_Crush.cfg:84
+#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:129 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:75 ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:125 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:180 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:76 ./Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:85 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:151 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:105 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:90 ./Bad_Moon_Rising/scenarios3/2_04_West.cfg:51 ./Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:122 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:43 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:89 ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:61 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:87 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:82 ./Bad_Moon_Rising/scenarios2/1_07_Crush.cfg:84
 msgid "Belleros"
 msgstr ""
 
@@ -3989,13 +3989,13 @@ msgid "The people of this town are evacuating with us, we must keep heading sout
 msgstr ""
 
 #. [message]: speaker=second_unit
-#: ./Bad_Moon_Rising/scenarios3/2_02_World.cfg:224 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:441 ./Bad_Moon_Rising/scenarios3/2_03_World.cfg:335 ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:299 ./Bad_Moon_Rising/scenarios2/1_10_World.cfg:215
+#: ./Bad_Moon_Rising/scenarios3/2_02_World.cfg:224 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:441 ./Bad_Moon_Rising/scenarios3/2_03_World.cfg:335 ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:306 ./Bad_Moon_Rising/scenarios2/1_10_World.cfg:215
 msgid "Ha Ha! Die, little worms."
 msgstr ""
 
 #. [message]: speaker=Lorenzon
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_02_World.cfg:238 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:455 ./Bad_Moon_Rising/scenarios3/2_03_World.cfg:349 ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:313 ./Bad_Moon_Rising/scenarios2/1_10_World.cfg:229
+#: ./Bad_Moon_Rising/scenarios3/2_02_World.cfg:238 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:455 ./Bad_Moon_Rising/scenarios3/2_03_World.cfg:349 ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:320 ./Bad_Moon_Rising/scenarios2/1_10_World.cfg:229
 msgid "Oh my, we are going to be slaughtered..."
 msgstr ""
 
@@ -4018,7 +4018,7 @@ msgstr ""
 #. [unit]: type=Ukian Witch, id=Carghanna
 #. [unit]: type=Ukian Sick, id=Carghanna
 #. [message]: speaker=narrator
-#: ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:229 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:150 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:96 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:280 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:522 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:902 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:1096 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:552 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:566 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:383 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:263 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:573
+#: ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:229 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:150 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:96 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:280 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:522 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:902 ./Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:1096 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:560 ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:574 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:383 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:210 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:520
 msgid "Carghanna"
 msgstr ""
 
@@ -4176,7 +4176,7 @@ msgid "Carry on..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:667 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:664 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:629 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:366 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:451 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:654 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:324 ./Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:410
+#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:667 ./Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:664 ./Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:629 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:368 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:451 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:654 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:324 ./Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:410
 msgid "Uhghh..."
 msgstr ""
 
@@ -4216,7 +4216,7 @@ msgid "Mine Mouth"
 msgstr ""
 
 #. [objective]: condition=win
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:23 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:316 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:23
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:23 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:318 ./Bad_Moon_Rising/scenarios3/2_02_MineMouth.cfg:23
 msgid "Defeat the Skoro Banner"
 msgstr ""
 
@@ -4432,7 +4432,7 @@ msgstr ""
 
 #. [side]: type=Orcish Warrior, id=Grat Gareth
 #. [unit]: type=Orcish Warrior, id=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:177 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:236 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:109 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:110
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:179 ./Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:236 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:109 ./Bad_Moon_Rising/scenarios3/2_04_World.cfg:110
 msgid "Grat Gareth"
 msgstr ""
 
@@ -4618,7 +4618,7 @@ msgstr ""
 
 #. [unit]: type=Primeval Nemesis, id=Nemesis
 #. [side]: type=Primeval Nemesis, id=Nemesis
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:467 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:242 ./Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:164 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:149
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:469 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:242 ./Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:164 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:149
 msgid "Nemesis"
 msgstr ""
 
@@ -4718,7 +4718,7 @@ msgstr ""
 #. [message]: speaker=C_Belleros
 #. [message]: speaker=Hrala Gareth
 #. [message]: speaker=Falka Teora
-#: ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:905 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:423 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:427 ./Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:438 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:698 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:641
+#: ./Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:905 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:423 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:427 ./Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:438 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:645 ./Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:641
 msgid "..."
 msgstr ""
 
@@ -5130,152 +5130,152 @@ msgid "Move Carghanna to the Gareth Banner Camp"
 msgstr ""
 
 #. [objective]: condition=lose
-#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:36 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:35 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:324 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:41 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:512
+#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:36 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:35 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:326 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:41 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:512
 msgid "Death of Grat Gareth"
 msgstr ""
 
 #. [side]: type=Orcish Warlord, id=Garkah Skoro
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:122
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:123
 msgid "Garkah Skoro"
 msgstr ""
 
 #. [unit]: type=Orcish Warrior, id=Sanka Skoro
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:148
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:149
 msgid "Sanka Skoro"
 msgstr ""
 
 #. [unit]: type=Orcish Slayer, id=Pogo Skoro
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:155
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:156
 msgid "Pogo Skoro"
 msgstr ""
 
 #. [unit]: type=Orcish Crossbowman, id=Astok Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:195
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:197
 msgid "Astok Gareth"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:227
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:229
 msgid "More orcs!  This just gets better and better..."
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:231
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:233
 msgid "Ha! I recognize you people! You helped save our healer, Hrala!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:235
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:237
 msgid "(Maybe our luck isn't so bad after all...)  Hail! What are you doing all the way over here? (Maybe his answer will give me a clue as to where we are...)"
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:239
-msgid "Aldak took your payment and attacked Skalla Teora. It was a foolish action, Aldak's forces were destroyed within a day. Now, Teora is exterminating all members of our banner.  We've headed west to escape, for Teora's grip is not so strong here.  Well, what are you doing here?"
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:241
+msgid "Aldak took your payment and attacked Skalla Teora. It was a foolish action; Aldak's forces were destroyed within a day.  Now, Teora is exterminating all members of our banner.  We've headed west to escape, Teora's grip is not so strong here. ...  Well, what are you doing here?"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:243
-msgid "(I guess I'll tell him.)  We were trapped in the cave by Teora's forces and the forces of another race, we barely escaped. In fact, is Hrala with you? One of our leaders is poisoned, and our healers cannot seem to cure it."
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:245
+msgid "(I guess I'll tell him.)  We were trapped in the cave by Teora's forces and the forces of another race, we barely escaped.  (I wonder...)  Is Hrala with you?  One of our leaders is poisoned, and our healers cannot seem to cure it."
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:247
-msgid "Hrala? Sure, she's here. She's tending wounded, but bring your sick one here and Hrala may be able to help. We cannot stay long however, those Skoro tribe jackals have been following us. We had hoped to hide in that cave, but it sounds like that is a bad plan..."
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:249
+msgid "Hrala? Sure, she's here. She's tending wounded, but bring your sick one here and Hrala may be able to help. We can't stay long though, those Skoro tribe jackals have been following us.  We'd hoped to hide in that cave, but now it sounds like a bad plan..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:251
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:253
 msgid "I think I see Skoro now..."
 msgstr ""
 
 #. [message]: speaker=Garkah Skoro
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:255
-msgid "Grah! Gareth Banner is always consorting with humans. Cannot win through their own power..."
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:257
+msgid "Grah! Gareth Banner is always consorting with humans.  Cannot win through their own power..."
 msgstr ""
 
 #. [message]: speaker=Sanka Skoro
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:259
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:261
 msgid "Those humans are the cave invaders! Skalla Teora wants their heads too! This is a great day!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:274
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:276
 msgid "You're safe, Carghanna, keep fighting it!"
 msgstr ""
 
 #. [message]: speaker=Carghanna
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:278
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:280
 msgid ". . ."
 msgstr ""
 
 #. [message]: speaker=Hrala Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:290
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:292
 msgid "You shouldn't have made her walk over here, it makes the poison spread faster. I am familiar with most of the poisons to be found, so I'll see what I can do. Come!"
 msgstr ""
 
 #. [message]: speaker=Hrala Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:299
-msgid "I'm afraid we cannot move anytime soon. We have some warriors who may be able to join us again, but scars need to close."
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:301
+msgid "I'm afraid we cannot move anytime soon.  We have some warriors who may be able to join us again, but scars need to close."
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:303
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:305
 msgid "Hrrmm... Then we must make a stand! We'll keep the enemy away from the wounded."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:307
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:309
 msgid "We'll clear the Skoro crew out of the way!"
 msgstr ""
 
 #. [objective]: condition=lose
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:328
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:330
 msgid "Enemy reaches the three tents between the encampments"
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:344
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:346
 msgid "Grrraahhh...."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:348
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:350
 msgid "We need to get away from this cave. We can get our bearings when we're on safer ground."
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:352
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:354
 msgid "We can move the wounded if we don't have to fight at the same time."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:680 ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:693 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:379 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:667 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:680
+#: ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:680 ./Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:693 ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:381 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:667 ./Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:680
 msgid "Grah..."
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:395
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:397
 msgid "They've reached our vulnerable wounded... That includes your friend..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:426
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:428
 msgid "That looks like a scout for those blue devils..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:451
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:453
 msgid "We really do need to get moving."
 msgstr ""
 
 #. [message]: speaker=Grat Gareth
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:483
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:485
 msgid "What the hell is that?"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:487
+#: ./Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:489
 msgid "They've caught up to us!"
 msgstr ""
 
@@ -5651,182 +5651,182 @@ msgid "Find survivors"
 msgstr ""
 
 #. [side]: type=Saurian Flanker, id=Zanax
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:127
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:128
 msgid "Zanax"
 msgstr ""
 
 #. [side]: type=Naga Myrmidon, id=Karxiss
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:164
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:166
 msgid "Karxiss"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:202
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:205
 msgid "Uuuuhg. -(COUGH!)- ... What happened?"
 msgstr ""
 
 #. [message]
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:207
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:210
 msgid "You were out cold, but the dog dragged you ashore."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:211
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:214
 msgid "Ashore? Where are we?"
 msgstr ""
 
 #. [message]
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:215
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:218
 msgid "We are in an underground river-"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:219
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:222
 msgid "(Carghanna was right...)"
 msgstr ""
 
 #. [message]
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:223
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:226
 msgid "When we jumped down the hole, we fell into a strong current. We were tossed around and got separated. The river spreads out here, so the current slows and debris collects here..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:227
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:230
 msgid "Debris like us... Where is everyone? Where is Carghanna?"
 msgstr ""
 
 #. [message]
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:231
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:234
 msgid "As I said, we got separated. I don't know where Carghanna is. Others are probably scattered further downriver."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:235
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:238
 msgid "Well, let's try to find the survivors. At some point, we need to figure out what we're going to do about those monsters up above. But first things first..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:257
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:265
 msgid "Good, a survivor..."
 msgstr ""
 
 #. [message]: speaker=$survivor34.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:261
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:269
 msgid "Be careful! There are hostile fish people around here!"
 msgstr ""
 
 #. [message]: speaker=$survivor21.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:293
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:301
 msgid "Sir! You're alive!"
 msgstr ""
 
 #. [message]: speaker=$recallleader.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:297
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:305
 msgid "I'd gathered the surviving civilians here. This place was warm and we could dry off, but then these snake people attacked!"
 msgstr ""
 
 #. [message]: speaker=$survivor22.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:327
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:335
 msgid "Commander Belleros is here!"
 msgstr ""
 
 #. [message]: speaker=$survivor33.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:331
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:339
 msgid "Sir, the snake-men have taken some of our people to the west, but they pushed the ford into deep water. A few of us headed north to see if we could find a way around..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:352
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:360
 msgid "Another survivor..."
 msgstr ""
 
 #. [message]: speaker=$survivor32.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:356
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:364
 msgid "There are more of us up ahead. The reptiles have Carghanna, they took her because they figured out she was important..."
 msgstr ""
 
 #. [message]: speaker=$survivor32.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:360
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:368
 msgid "We attacked, but were unsuccessful. They said they'd kill her if we tried that again."
 msgstr ""
 
 #. [message]: speaker=$survivor12.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:389
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:397
 msgid "We are near a waterfall, I think that's where all the fog is coming from..."
 msgstr ""
 
 #. [message]: speaker=Zanax
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:417
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:425
 msgid "Hiss! Back off! Come any cloesssser and the witch is dead."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:421
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:429
 msgid "You will let her go, and we will let you live."
 msgstr ""
 
 #. [message]: speaker=Zanax
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:425
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:433
 msgid "No! Not good enough!"
 msgstr ""
 
 #. [message]: speaker=Zanax
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:448
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:456
 msgid "Like I thought, you just want to kill us. You should know, your friend will not leave this river alive..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:452
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:460
 msgid "Is that an idle threat, or..."
 msgstr ""
 
 #. [message]: speaker=Zanax
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:456
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:464
 msgid "Hsss. We knew you would attack, but we couldn't just kill her so she wasss... ssedated."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:460
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:468
 msgid "Kill every one of these damn reptiles! We need to get Carghanna to a healer before it's too late!"
 msgstr ""
 
 #. [message]: speaker=$survivor23.id
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:478
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:486
 msgid "Sir, I think this is the way out!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:488
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:496
 msgid "There could still be survivors, we shouldn't leave just yet."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:511
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:519
 msgid "Let's not leave people behind..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:517
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:525
 msgid "So, we're back at the surface but I don't know where we are. We need to get help for Carghanna."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:535
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:543
 msgid "Hssss. She will not sssurvive the poison..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:553
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:561
 msgid "Uhgg..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:561
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:569
 msgid "You don't look well..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:567
+#: ./Bad_Moon_Rising/scenarios3/2_04_River.cfg:575
 msgid "I'm not well... but don't let me die in this cave. Let's go..."
 msgstr ""
 
@@ -6011,289 +6011,225 @@ msgstr ""
 msgid "Snowblind"
 msgstr ""
 
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:16 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:16
-msgid "Raenna awoke in a dark, unfamiliar room lit by an odd blue light. She felt strange - distracted and unable to focus, but her body felt better than it had in years. She sat up, and the room went spinning. She felt a cold hand on her shoulder, heard a voice at her side:"
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:23 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:23
-msgid ""
-"'Welcome back, I worried you would not wake.'\n"
-"'Where am I?  Who are you?'\n"
-"'You are in a safe place, and my name is Athanta.  You were going to die in that cave, but I brought you here.'\n"
-"'Die?  Cave?'"
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:29 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:29
-msgid ""
-"'Your friends have wasted no time in bringing disaster upon us all. Soon after they abandoned you in the cave, they rushed to prostrate themselves before dark spirits-'\n"
-"'Why would they do that, why would they want disaster?'\n"
-"'They do not want disaster, they are scared and know not what they do.  That is why you must stop them, alert them of their mistake."
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:33 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:33
-msgid "'But if they will not cooperate, you will have to use force...'"
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:37
-msgid "Meanwhile, out on the tundra, Belleros and the Ukians had put some distance between themselves and the enemy forces. Belleros did not know if the daemons needed to sleep, but he knew that humans did. As they set up camp, Belleros's thoughts had time to spin... "
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:41 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:41
-msgid "He had known Hrala's suggestion was a long shot, but the results were still disappointing. Had Carghanna been cured, the future might not seem so dire. He admired the way she had always managed to stay in control, never giving in to panic."
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:45 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:45
-msgid "And now there was plenty cause to panic. Belleros might have given in to panic, but he felt a strange calm. Or rather a deadness. Teora Banner and the blue demons had total control of the north, the elves in the south wanted the Ukians dead. There was nowhere to go and time was slipping away..."
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:52 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:52
-msgid ""
-"That night, Belleros woke to find his tent filled with a faint green light. A familiar voice spoke into his ear.\n"
-"'Belleros, don't give up hope.  The future looks bleak, but there is something you can do.'\n"
-"'Carghanna?  Where are you-'\n"
-"'Though I cannot be at your side, I watch over you.  You did the right thing taking me to that temple.  I have learned of a way to rid the land of those demons.  North of here, at the peak of a great volcano, is a focus of great power."
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:58
-msgid ""
-"'You must reach the peak of the volcano before the demons. If they gain control of it, they will use it to destroy all life across the land.'\n"
-"'Carghanna, this all sounds very strange.  Racing north, climbing a mountain...  Our people are wounded and tired, there are orcs and demons all over the tundra...'\n"
-"'I know the journey will be tough, but you must try.  The beings that built the temple on Mount Tien were mortal enemies of the demons and fought them to a stalemate.  But that was long ago, and now the demons run unchecked.  All life depends upon us reaching that volcano before they do...  Hurry...'"
-msgstr ""
-
-#. [part]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:62 ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:62
-msgid "The light faded and she was gone. Belleros pulled his boots on and ran out to wake the others. The demons could move fast and at least one of them could fly - it was going to be a brutal march, but there was no choice..."
-msgstr ""
-
 #. [time]: id=bmr_storm
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:70
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:17
 msgid "Storm"
 msgstr ""
 
 #. [objective]: condition=win
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:91
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:38
 msgid "Reach Northern edge of map"
 msgstr ""
 
 #. [objectives]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:101
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:48
 msgid "The cutting cold wind damages exposed units. Units are sheltered near the keeps and villages (though the wind graphic covers everywhere...). Unlike poison, the cold will kill."
 msgstr ""
 
 #. [side]: type=Orcish Warlord, id=Makroh Teora
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:169
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:116
 msgid "Makroh Teora"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:250
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:197
 msgid "A harsh wind comes from the west. It cuts through our clothes, and obscures our vision... To carry on would be suicidal, we will need to take cover in this outcropping and hope it passes-"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:264
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:211
 msgid "Belleros... It is a difficult and dangerous path, but the enemy does not stop. There is no rest here, you must keep moving."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:281
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:228
 msgid "... We cannot stop here, the enemy will catch up to us. Dangerous as it is, we will need to venture forth into the storm..."
 msgstr ""
 
 #. [unstore_unit]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:363
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:310
 msgid "4"
 msgstr ""
 
 #. [unstore_unit]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:366
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:313
 msgid "6"
 msgstr ""
 
 #. [unstore_unit]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:369
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:316
 msgid "8"
 msgstr ""
 
 #. [message]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:403
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:350
 msgid "GraaAAAHHhhh!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:407
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:354
 msgid "Huh, I haven't seen one of those in a long time..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:422
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:369
 msgid "The wind doesn't seem to be as strong here..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:426
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:373
 msgid "The trees must act as a break. We'll never make it if we go dashing out in the open, we should use these shelters to regain our strength before pressing onward."
 msgstr ""
 
 #. [message]
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:439
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:386
 msgid "hrraAAHhang!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:443
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:390
 msgid "Another one..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:458
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:405
 msgid "Ahh!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:468
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:415
 msgid "It's just a yak..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:472
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:419
 msgid "-(Ahem!)-. I was startled, that's all..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:535
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:482
 msgid "R-Raenna? You're alive!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:540
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:487
 msgid "Indeed..."
 msgstr ""
 
 #. [message]: speaker=Hark Teora
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:545
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:492
 msgid "More humans! This place is being over-run!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:549
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:496
 msgid "Raenna, I'm so glad you survived the cave. I can explain what happened later, but now we need to continue north as quickly as possible!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:553
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:500
 msgid "Oh, we have plenty to catch up on, but I'm afraid you do not understand what is happening. Troublesome as these orcs are, they are not why I am here. You do the bidding of dark spirits - I cannot let you proceed. I do not wish to hurt you, Belleros. Turn back, do not sacrifice our people..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:557
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:504
 msgid "What!? What 'dark spirits'!?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:574
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:521
 msgid "Do not be fooled, Belleros. Raenna has fallen into the hands of the enemy, she is no longer on our side. Do not let her distract you, the enemy horde does not rest and you must keep moving. Those orcs need not be your enemy, they are in just as much danger as you are..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:591
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:538
 msgid "(Cultists...)"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:613
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:560
 msgid "Raenna, I do not wish to hurt you either. But- "
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:617
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:564
 msgid "Your mind is clouded, Belleros, and dark spirits have your ear. Cease your mad march north."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:621
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:568
 msgid "I cannot take you seriously while you stand there shoulder to shoulder with Scarrion's cultists."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:625
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:572
 msgid "Very well. Fellow Ukians! The path you walk leads to slaughter, do not be-"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:630
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:577
 msgid ""
 "*Enough!  \n"
 "Raenna, I do not wish to harm you either, but it is you who has been taken in by 'dark spirits.'  I cannot forfeit countless lives for the sake of old friendships- "
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:634
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:581
 msgid "Very well. I did try to warn you..."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:647
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:594
 msgid "Kora! Yaahh!"
 msgstr ""
 
 #. [message]: speaker=Kora
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:690
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:637
 msgid "Yah! Grektah et sytos!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:694
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:641
 msgid "As you say, Belleros, one cannot sacrifice countless lives for the sake of old friendships..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:712
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:659
 msgid "Orcs! We have been enemies in the past, but this is a threat neither of us has faced before. It would be very bad for both of us if the daemons reach the volcano. I suggest a truce!"
 msgstr ""
 
 #. [message]: speaker=Hark Teora
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:719
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:666
 msgid "Maybe. I'll send word, we have common purpose. For any lasting truce, you will need to talk to Lord Skalla... Rider! Send word to base camp that the ragged humans are not aggressors!"
 msgstr ""
 
 #. [message]: speaker=Spank Teora
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:723
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:670
 msgid "Right!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:755
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:702
 msgid "I did not want to do that, but I had no choice. You are not fit to be a leader, Belleros..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:767
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:714
 msgid "This is not over, you dumb bastard..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:392 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:787
+#: ./Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:392 ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:734
 msgid "Ack!"
 msgstr ""
 
 #. [message]: speaker=Makroh Teora
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:802
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:749
 msgid "So, you are no friends of the blue people? Lord Skalla will wish to speak with you, he is further up this pass."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:806
+#: ./Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:753
 msgid "(Finally, some good luck.)  Thank you. There is no time to waste, the 'blue people' are headed this way..."
 msgstr ""
 
@@ -6553,8 +6489,54 @@ msgid "I think we'd stand a better chance if we stood side by side, but I will r
 msgstr ""
 
 #. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:16
+msgid "Raenna awoke in a dark, unfamiliar room lit by an odd blue light. She felt strange - distracted and unable to focus, but her body felt better than it had in years. She sat up, and the room went spinning. She felt a cold hand on her shoulder, heard a voice at her side:"
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:23
+msgid ""
+"'Welcome back, I worried you would not wake.'\n"
+"'Where am I?  Who are you?'\n"
+"'You are in a safe place, and my name is Athanta.  You were going to die in that cave, but I brought you here.'\n"
+"'Die?  Cave?'"
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:29
+msgid ""
+"'Your friends have wasted no time in bringing disaster upon us all. Soon after they abandoned you in the cave, they rushed to prostrate themselves before dark spirits-'\n"
+"'Why would they do that, why would they want disaster?'\n"
+"'They do not want disaster, they are scared and know not what they do.  That is why you must stop them, alert them of their mistake."
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:33
+msgid "'But if they will not cooperate, you will have to use force...'"
+msgstr ""
+
+#. [part]
 #: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:37
 msgid "Meanwhile, out on the tundra, Belleros and the Ukians had regathered themselves and considered their next move. Belleros did not know if the daemons needed to sleep, but he knew that humans did. As they set up camp, Belleros's thoughts had time to spin... "
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:41
+msgid "He had known Hrala's suggestion was a long shot, but the results were still disappointing. Had Carghanna been cured, the future might not seem so dire. He admired the way she had always managed to stay in control, never giving in to panic."
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:45
+msgid "And now there was plenty cause to panic. Belleros might have given in to panic, but he felt a strange calm. Or rather a deadness. Teora Banner and the blue demons had total control of the north, the elves in the south wanted the Ukians dead. There was nowhere to go and time was slipping away..."
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:52
+msgid ""
+"That night, Belleros woke to find his tent filled with a faint green light. A familiar voice spoke into his ear.\n"
+"'Belleros, don't give up hope.  The future looks bleak, but there is something you can do.'\n"
+"'Carghanna?  Where are you-'\n"
+"'Though I cannot be at your side, I watch over you.  You did the right thing taking me to that temple.  I have learned of a way to rid the land of those demons.  North of here, at the peak of a great volcano, is a focus of great power."
 msgstr ""
 
 #. [part]
@@ -6563,6 +6545,11 @@ msgid ""
 "'You must reach the peak of the volcano before the demons. If they gain control of it, they will use it to destroy all life across the land.'\n"
 "'Carghanna, this all sounds very strange.  Racing north, climbing a mountain...  Our people are wounded and tired, there are orcs and demons all over the tundra...'\n"
 "'Be strong, Belleros, the journey will be tough but you must try.  The beings that built the temple on Mount Tien were mortal enemies of the demons and fought them to a stalemate.  But that was long ago, and now the demons run unchecked.  All life depends upon us reaching that volcano before they do...  Hurry...  Please...'"
+msgstr ""
+
+#. [part]
+#: ./Bad_Moon_Rising/scenarios3/2_05_West.cfg:62
+msgid "The light faded and she was gone. Belleros pulled his boots on and ran out to wake the others. The demons could move fast and at least one of them could fly - it was going to be a brutal march, but there was no choice..."
 msgstr ""
 
 #. [objectives]
@@ -6591,37 +6578,37 @@ msgid "Get attacked by Primval Forces (Dogface)"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:183
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:189
 msgid "We need to head somewhere safe, but I'm not sure where that would be..."
 msgstr ""
 
 #. [message]: speaker=Cavalry
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:199
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:205
 msgid "Kree!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:203
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:209
 msgid "Uh-oh."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:219
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:225
 msgid "This is Elf Territory...  There is no safety here, we need to head back north."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:232
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:238
 msgid "We can't go back to the cave, that's where the invaders are..."
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:247
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:253
 msgid "We've been caught!  Scatter!"
 msgstr ""
 
 #. [message]: speaker=C_Belleros
-#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:283
+#: ./Bad_Moon_Rising/scenarios3/2_05_World.cfg:290
 msgid "We must go through this to get to the volcano..."
 msgstr ""
 
