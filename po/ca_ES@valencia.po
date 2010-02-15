@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2010-02-03 02:29+0100\n"
+"POT-Creation-Date: 2010-02-15 03:08+0100\n"
 "PO-Revision-Date: 2009-12-27 16:34+0100\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -73,7 +73,7 @@ msgstr ""
 msgid ""
 "A soldier of Weldyn is captured by a necromancer. His attempt to escape sets "
 "events in motion that could have consequences for all life on the planet. "
-"(Quick campaign, no recruiting.  version 0.9.5)"
+"(Quick campaign, no recruiting.  version 0.9.6)"
 msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising
@@ -109,7 +109,7 @@ msgstr ""
 msgid ""
 "The best of intentions often do not lead to the best results. The new King "
 "was cruel, but the rebellion unwittingly unleashes an even greater evil on "
-"the world. (version 0.9.5)"
+"the world. (version 0.9.6)"
 msgstr ""
 
 #. [campaign]: id=Bad_Moon_Rising_III
@@ -126,7 +126,7 @@ msgstr ""
 #: Bad_Moon_Rising/_main.cfg:80
 msgid ""
 "Battles were won, but the war is not over. The Ukians find they did not "
-"fully understand just how much danger the world is in. (version 0.9.5)"
+"fully understand just how much danger the world is in. (version 0.9.6)"
 msgstr ""
 
 #. [about]
@@ -704,7 +704,7 @@ msgstr ""
 
 #. [objective]: condition=lose
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:40
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1203
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1251
 #: Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:42
 #: Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:39
 #: Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:334
@@ -910,7 +910,7 @@ msgstr ""
 
 #. [side]: type=Primeval Storm, id=Athanta
 #. [unit]: type=Primeval Storm, id=Athanta
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:154
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:175
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:180
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:172
 #: Bad_Moon_Rising/scenarios1/0_04_Darkside.cfg:186
@@ -1815,7 +1815,7 @@ msgstr ""
 #. [side]: type=Bad Raenna, id=Raenna
 #. [unit]: type=Raenna2, id=Raenna
 #. [unit]: type=Raenna, id=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:182
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:203
 #: Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:165
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:231
 #: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:246
@@ -2623,8 +2623,8 @@ msgid "Hold Out Until End of Turns"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1047
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1199
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1049
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1247
 #: Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:38
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:1252
 #: Bad_Moon_Rising/scenarios3/2_03_Fundraising.cfg:38
@@ -3141,7 +3141,7 @@ msgstr ""
 #. [unit]: type=Ukian Officer, id=Belleros
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:129
 #: Bad_Moon_Rising/scenarios3/2_06_Gate.cfg:75
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:125
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:146
 #: Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:180
 #: Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:76
 #: Bad_Moon_Rising/scenarios3/2_05_Shelter.cfg:85
@@ -3611,7 +3611,7 @@ msgstr ""
 #. [time]: id=thepit
 #. [time]: id=thepit_illum
 #. [scenario]: id=1_09_Pit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:15
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:21
 #: Bad_Moon_Rising/scenarios3/2_04_River.cfg:16
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:16
 #: Bad_Moon_Rising/scenarios3/2_03_Pit.cfg:16
@@ -4946,7 +4946,7 @@ msgstr ""
 #. [unit]: type=Ukian Witch, id=Carghanna
 #. [unit]: type=Ukian Sick, id=Carghanna
 #. [message]: speaker=narrator
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:229
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:226
 #: Bad_Moon_Rising/scenarios3/2_01_Trouble.cfg:150
 #: Bad_Moon_Rising/scenarios3/2_04_Checkpoint.cfg:96
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:280
@@ -5683,7 +5683,7 @@ msgid "Cogue"
 msgstr ""
 
 #. [side]: type=Primeval Ares, id=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:289
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:286
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:344
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:144
 #: Bad_Moon_Rising/scenarios3/2_05_World.cfg:77
@@ -5813,7 +5813,7 @@ msgstr ""
 #. [message]: speaker=C_Belleros
 #. [message]: speaker=Hrala Gareth
 #. [message]: speaker=Falka Teora
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:905
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:907
 #: Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:423
 #: Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:427
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:438
@@ -8274,7 +8274,7 @@ msgid "Reach the keep in the mountains"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:34
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:40
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:27
 msgid "Death of Raena"
 msgstr ""
@@ -8512,7 +8512,7 @@ msgid "Huh."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:789
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:791
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams1.cfg:1018
 msgid ""
 "Any hope for the world died along with Raenna. The victor of this battle, "
@@ -8632,41 +8632,41 @@ msgid "All Dreams Die - II"
 msgstr ""
 
 #. [objective]: condition=win
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:30
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:36
 msgid "Defeat Carghanna"
 msgstr ""
 
 #. [side]: type=Ukian Subcommander, id=Berach
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:326
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:323
 msgid "Berach"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:620
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:617
 msgid "250 Gold coins! Oddly minted, but still: Gold coins!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:667
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:669
 msgid ""
 "Belleros and Carghanna have a head start, but they can't be that well "
 "entrenched yet..."
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:724
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:726
 msgid ""
 "This structure houses great troubles, don't let the dark spirits get a "
 "foothold - Exterminate the beasts!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:805
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:807
 msgid "Sweet success. It won't be long now..."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:809
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:811
 msgid ""
 "As the damaged, ancient device glowed brighter, Raenna spent her final "
 "moments in contemplation.  She looked back with some nostalgia upon the "
@@ -8675,18 +8675,18 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:840
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:842
 msgid "Ooh, nice try. I'm still getting set up here though, so go away."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:844
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:846
 msgid ""
 "Carghanna! What are you doing, what is going on!? Please say you have a plan."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:848
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:850
 msgid ""
 "'Carghanna?'  Yes, I suppose it appears that way... Carghanna is one of us "
 "now, you will join her soon enough. Rest assured that I do have a plan, "
@@ -8694,17 +8694,17 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:866
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:868
 msgid "Your plans are not worth listening to anyway, for they are but dreams."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:870
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:872
 msgid "How? - you-"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:874
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:876
 msgid ""
 "With your power source, we will blow the top off of this volcano! We need "
 "not fight your slaves, for we will win through attrition: The ash from the "
@@ -8713,74 +8713,74 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:878
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:880
 msgid "Whoa... What!?"
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:884
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:886
 msgid ""
-"*-(Whack)-\n"
+"<b>-(Whack)-</b>\n"
 "Do not worry, Raenna, you will not die with them.  Retreat from this summit "
 "and join Ares.  You can spend your days as one of us."
 msgstr ""
 
 #. [message]: role=Follower3
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:901
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:903
 msgid "And what about us? Raenna, what will happen to us?"
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:909
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:911
 msgid ""
 "Foul Nemesis! This is a set-back, but we Khthon are very patient. Life is "
 "tenacious, and will survive your volcanic winter to regain its foot-hold..."
 msgstr ""
 
 #. [message]: speaker=Echidna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:913
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:915
 msgid ""
 "And when it does, I will be there to collect and direct it. So, until then..."
 msgstr ""
 
 #. [message]: speaker=Nemesis
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:926
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:928
 msgid "No, Echidna. Not this time..."
 msgstr ""
 
 #. [message]: speaker=Athanta
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:934
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:936
 msgid ""
 "This is the plan? Destroy this powerful facility, continue going in circles "
 "with the Khthon? My strategy-"
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:938
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:940
 msgid ""
 "Your plan was falling apart! Unless giving Echidna a new army was part of "
 "it..."
 msgstr ""
 
 #. [message]: speaker=Athanta
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:942
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:944
 msgid ""
 "Short-sighted as ever! I'm putting a stop to this idiocy, I'll see if I can "
 "shut down the bomb."
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:965
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:967
 msgid "You will do no such thing!"
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1024
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1026
 msgid "The blast will be powerful, we should not stay here."
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1028
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1030
 msgid ""
 "The spreading darkness and ash will weaken the lesser races, but if the "
 "Khthon get to them first they could still be a problem. We will march south, "
@@ -8789,128 +8789,150 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1032
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1034
 msgid "That doesn't sound good..."
 msgstr ""
 
 #. [message]: role=Follower3
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1036
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1038
 msgid "Can't we do something?"
 msgstr ""
 
 #. [objective]: condition=win
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1042
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1044
 msgid "Deactivate the Volcanic device"
 msgstr ""
 
 #. [objective]: condition=lose
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1051
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1053
 msgid "Volcanic Eruption"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1056
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1058
 msgid ""
 "We need to prevent the eruption, but that would not deal with our friends - "
 "they who would kill us for 'attrition.'"
 msgstr ""
 
 #. [message]: role=Follower3
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1060
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1062
 msgid "Can an immortal god be blown up? How do we stop the explosion?"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1069
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1071
 msgid "I see one of those urns, maybe it does something... (I hope)."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1079
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1081
 msgid "As for the immortals, there is that special sword..."
 msgstr ""
 
 #. [message]: role=Follower3
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1083
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1085
 msgid "Sounds unlikely..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1123
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1117
+msgid "That big cat again!  We have to find a way past that thing..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1128
+msgid "I see some recent boot-prints in the dust..."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1139
+msgid "This looks like a dead end..."
+msgstr ""
+
+#. [message]: speaker=second_unit
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1149
+msgid ""
+"They are human, but there was something wrong.  I could see it in the vacant "
+"eyes."
+msgstr ""
+
+#. [message]: speaker=unit
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1171
 msgid "It spins!"
 msgstr ""
 
 #. [message]
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1133
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1181
 msgid "What are you doing!?"
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1142
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1190
 msgid ""
-"Using humans was a mistake, yet another of Athanta's strange ideas. Why did "
+"Using humans was a mistake - yet another of Athanta's strange ideas. Why did "
 "I listen to her?"
 msgstr ""
 
 #. [message]: speaker=Ares
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1146
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1194
 msgid ""
 "Now we will have to do this the hard way, but we will prevail. Neither the "
 "Khthon nor the animals they use will stand in our way..."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1171
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1219
 msgid ""
 "That sphere will still explode. It will surely kill us, but I doubt it will "
 "kill Ares. We will have to take care of that. I doubt we have much time."
 msgstr ""
 
 #. [objective]: condition=win
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1194
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1242
 msgid "Slay Ares"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1219
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1245
-msgid "This urn is attached to the floor... *hrmph*  It spins."
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1267
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1293
+msgid "This urn is attached to the floor... <i>*hrmph*</i>  It spins."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1232
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1261
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1287
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1280
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1309
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1335
 msgid "I heard squealing metal. Something happened."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1274
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1322
 msgid "This urn is attached to the floor... But it spins?"
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1298
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1346
 msgid "A box of ... little widgets... I'm not sure what they are."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1311
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1359
 msgid "This urn is also attached to the floor... And it spins as well."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1380
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1428
 msgid "I see light beyond this gate."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1384
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1432
 msgid "There has to be some way to open it."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1398
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1446
 msgid ""
 "This tablet has writing on it, but none of it makes any sense... It does "
 "have what looks like a map though. I think there is something important to "
@@ -8918,35 +8940,35 @@ msgid ""
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1402
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1450
 msgid "So, we head to the northeast."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1414
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1462
 msgid "There is a human skeleton under this thing... And an old book."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1418
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1466
 msgid "I cannot read the writing, but there are lots of diagrams."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1422
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1470
 msgid "Interesting..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1434
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1482
 msgid ""
 "These storage bins don't hold anything of note, but they were obscuring this "
 "equipment."
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1520
-msgid "A hissing from the sphere, times up and  Ares is still alive-"
+#: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:1572
+msgid "A hissing from the sphere, time's up and Ares is still alive-"
 msgstr ""
 
 #. [part]
@@ -9383,21 +9405,21 @@ msgstr ""
 msgid "Nah!"
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:409
+#: Bad_Moon_Rising/utils/items.cfg:433
 msgid "$unit.name found a crystal sword.  How impractical."
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:409
+#: Bad_Moon_Rising/utils/items.cfg:433
 msgid "$unit.name found a sharp crystal sword.  Pick it up?"
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:411
+#: Bad_Moon_Rising/utils/items.cfg:435
 msgid "Crystal Blade"
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:413
+#: Bad_Moon_Rising/utils/items.cfg:437
 msgid ""
 "A brass tag on the hilt has writing in an unreadable alien script, but "
 "certain glyphs are understandable...  Use this sword only when necessary, "
@@ -9405,90 +9427,90 @@ msgid ""
 msgstr ""
 
 #. [effect]: type=arcane
-#: Bad_Moon_Rising/utils/items.cfg:417
+#: Bad_Moon_Rising/utils/items.cfg:441
 msgid "Crystal Sword"
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:430
+#: Bad_Moon_Rising/utils/items.cfg:454
 msgid "$unit.name found a fancy-looking breastplate.  Put it on?"
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:430
+#: Bad_Moon_Rising/utils/items.cfg:454
 msgid "$unit.name found a fancy-looking breastplate.  How silly."
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:432
+#: Bad_Moon_Rising/utils/items.cfg:456
 msgid "Aegis Armor"
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:434
+#: Bad_Moon_Rising/utils/items.cfg:458
 msgid ""
 "This armor bears a complicated crest of unfamiliar design. No blades can cut "
 "through its odd material. Will it stop the blades of Ares?"
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:447
+#: Bad_Moon_Rising/utils/items.cfg:471
 msgid "$unit.name found a mirror.  Hey Good-looking."
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:447
+#: Bad_Moon_Rising/utils/items.cfg:471
 msgid "$unit.name found a very shiny shield.  Pick it up?"
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:449
+#: Bad_Moon_Rising/utils/items.cfg:473
 msgid "Reflector Shield"
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:451
+#: Bad_Moon_Rising/utils/items.cfg:475
 msgid "This shield deflects the damaging energy of fire attacks."
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:463 Bad_Moon_Rising/utils/items.cfg:478
-#: Bad_Moon_Rising/utils/items.cfg:493
+#: Bad_Moon_Rising/utils/items.cfg:487 Bad_Moon_Rising/utils/items.cfg:502
+#: Bad_Moon_Rising/utils/items.cfg:517
 msgid ""
 "$unit.name found a frosty amulet.  It is cold to the touch.  Pick it up?"
 msgstr ""
 
-#: Bad_Moon_Rising/utils/items.cfg:463 Bad_Moon_Rising/utils/items.cfg:478
-#: Bad_Moon_Rising/utils/items.cfg:493
+#: Bad_Moon_Rising/utils/items.cfg:487 Bad_Moon_Rising/utils/items.cfg:502
+#: Bad_Moon_Rising/utils/items.cfg:517
 msgid "$unit.name found a cold amulet.  Cool..."
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:465 Bad_Moon_Rising/utils/items.cfg:480
-#: Bad_Moon_Rising/utils/items.cfg:495
+#: Bad_Moon_Rising/utils/items.cfg:489 Bad_Moon_Rising/utils/items.cfg:504
+#: Bad_Moon_Rising/utils/items.cfg:519
 msgid "Cooler Charm"
 msgstr ""
 
 #. [object]
-#: Bad_Moon_Rising/utils/items.cfg:467 Bad_Moon_Rising/utils/items.cfg:482
-#: Bad_Moon_Rising/utils/items.cfg:497
+#: Bad_Moon_Rising/utils/items.cfg:491 Bad_Moon_Rising/utils/items.cfg:506
+#: Bad_Moon_Rising/utils/items.cfg:521
 msgid ""
 "This odd amulet regulates local temperatures. Should come in handy against "
 "fire blasts..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/utils/items.cfg:525
+#: Bad_Moon_Rising/utils/items.cfg:549
 msgid "I feel light-headed..."
 msgstr ""
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/utils/items.cfg:541
+#: Bad_Moon_Rising/utils/items.cfg:565
 msgid "The pommel of the sword is glowing."
 msgstr ""
 
 #. [message]: speaker=narrator
-#: Bad_Moon_Rising/utils/items.cfg:546
+#: Bad_Moon_Rising/utils/items.cfg:570
 msgid "These are not toys for thieves!"
 msgstr ""
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/utils/items.cfg:555
+#: Bad_Moon_Rising/utils/items.cfg:579
 msgid "There goes our only chance to stop the immortal demons..."
 msgstr ""
 
