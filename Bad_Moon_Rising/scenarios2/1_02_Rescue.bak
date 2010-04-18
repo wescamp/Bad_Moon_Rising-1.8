@@ -226,16 +226,6 @@
 		numerical_equals=5
 	    [/variable]
 	    [then]
-		[fire_event]
-		name=rescue_archers
-		[/fire_event]
-	    [/then]
-	[/if]
-	[/event]
-#enddef
-
-	[event]
-	name=rescue_archers
 	[message]
 		speaker=Carusoe 
 		message = _ "These villages all seem to be abandoned. It's as if all them girls left moments 'fore we arrived."
@@ -332,25 +322,11 @@
 	speaker=Duval
 	message= _ "This is very nice, but we still have to focus on the task at hand!"	
 	[/message]
-	[/event]
+	    [/then]
+	[/if]
 
-# so that the archers show up even if the enemy fails to grab the villages.  Turn number may need tweaking.
-	[event]
-	name=turn 10
-# testing...
-#	name=turn 2
-	    [if]
-		[variable]
-		name=village_raid
-		less_than=5
-		[/variable]
-		[then]
-		    [fire_event]
-			name=rescue_archers
-		    [/fire_event]
-		[/then]
-	    [/if]
 	[/event]
+#enddef
 
 	{BMR_VILLAGE_RAID 24 11 (
 
@@ -458,7 +434,6 @@
 		result=defeat
 		[/endlevel]
 	[/event]
-
 	[event]
 	name=die
 		[filter]
