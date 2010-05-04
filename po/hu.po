@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2010-04-24 11:10+0200\n"
-"PO-Revision-Date: 2010-04-22 10:14+0100\n"
+"PO-Revision-Date: 2010-05-04 11:42+0100\n"
 "Last-Translator: Kelemen Zoltán <kelemen_zoltan@freemail.hu>\n"
 "Language-Team: none\n"
 "MIME-Version: 1.0\n"
@@ -71,7 +71,6 @@ msgstr "Vérizzadásos"
 
 #. [campaign]: id=Bad_Moon_Rising_I
 #: Bad_Moon_Rising/_main.cfg:36
-#, fuzzy
 msgid ""
 "A soldier of Weldyn is captured by a necromancer. His attempt to escape sets "
 "events in motion that could have consequences for all life on the planet. "
@@ -79,7 +78,7 @@ msgid ""
 msgstr ""
 "Egy weldyni katonát foglyul ejt egy holtidéző. Szökési kísérlete olyan "
 "események elindítójává válik, amelyek a bolygó minden élőlényére komoly "
-"hatással bírnak. (Gyors küldetés, nincs toborzás. 0.9.6-os verzió) "
+"hatással bírnak. (Gyors küldetés, nincs toborzás. 0.9.8-as verzió) "
 
 #. [campaign]: id=Bad_Moon_Rising
 #: Bad_Moon_Rising/_main.cfg:44
@@ -111,14 +110,13 @@ msgstr "Alvezér"
 
 #. [campaign]: id=Bad_Moon_Rising
 #: Bad_Moon_Rising/_main.cfg:58
-#, fuzzy
 msgid ""
 "The best of intentions often do not lead to the best results. The new King "
 "was cruel, but the rebellion unwittingly unleashes an even greater evil on "
 "the world. (version 0.9.8)"
 msgstr ""
 "Olykor a jószándék nem vezet jóra. Az új király kegyetlen volt, de az ellene "
-"való lázadás csak még nagyobb gonoszságot szabadított a világra. (0.9.6-os "
+"való lázadás csak még nagyobb gonoszságot szabadított a világra. (0.9.8-os "
 "verzió)"
 
 #. [campaign]: id=Bad_Moon_Rising_III
@@ -133,14 +131,13 @@ msgstr "RHKF3"
 
 #. [campaign]: id=Bad_Moon_Rising_III
 #: Bad_Moon_Rising/_main.cfg:80
-#, fuzzy
 msgid ""
 "Battles were won, but the war is not over. The Ukians find they did not "
 "fully understand just how much danger the world is in. (version 0.9.8)"
 msgstr ""
-"A csatát megnyerték, de a háború még korántsem ért véget. Az ukiaiak "
-"rájöttek, hogy nem is sejtették, mekkora veszélyben van a világ. (0.9.6-os "
-"verzió)"
+"A csatát megnyerték, de a háború még korántsem ért véget. Az ukiaiaknak rá "
+"kellett jönniük, hogy nem is sejtették, mekkora veszélyben van a világ. "
+"(0.9.8-os verzió)"
 
 #. [about]
 #: Bad_Moon_Rising/about.cfg:7
@@ -7688,27 +7685,32 @@ msgstr "Túl késő! Ukiah ellenségei sosem ismerhetik meg a békét..."
 
 #. [message]: speaker=C_Belleros
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:429
-#, fuzzy
 msgid ""
 "(Hrmmm...)  Still, if we can chase off the ghosts, we'll bury the frozen "
 "bodies and hope it causes them to leave us alone."
-msgstr "(Hrmmm...) Ha elűztük a szellemeket, eltemetjük a fagyott testeket... "
+msgstr ""
+"(Hrmmm...) Ha elűztük a szellemeket, eltemetjük a fagyott testeket, és "
+"reméljük, hogy nem háborgatnak többet a szellemeik. "
 
 #. [message]: speaker=Grat Gareth
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:433
 msgid ""
 "We've been in this land for ages, yet we've no stories of these spirits."
 msgstr ""
+"Évekig jártuk ezt a vidéket, s ezekről a szellemekről még csak nem is "
+"hallottunk."
 
 #. [message]: speaker=Hrala Gareth
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:437
 msgid "I agree, something else is going on.  Simple rituals may not work."
 msgstr ""
+"Valóban. Itt komoly dolgok történnek. Az ilyen egyszerű szertartások nem "
+"sokat érnek."
 
 #. [message]: speaker=C_Belleros
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:441
 msgid "Simple rituals are all we have."
-msgstr ""
+msgstr "Csak ennyit tudunk tenni, s reménykedni."
 
 #. [message]: speaker=C_Belleros
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:450
@@ -10981,13 +10983,13 @@ msgstr "Aúúú..."
 #. [print]
 #: Bad_Moon_Rising/utils/skirmish.cfg:1074
 msgid "Recall Cost: $sk_recallcost2|g"
-msgstr ""
+msgstr "Visszahívás költsége: $sk_recallcost2|g"
 
 #. [message]
 #: Bad_Moon_Rising/utils/skirmish.cfg:1118
 #: Bad_Moon_Rising/utils/skirmish.cfg:1148
 msgid "They had some resources, we are $sk_prize|g richer."
-msgstr ""
+msgstr "Volt egy kis pénzük. Gazdagabbak lettünk $sk_prize|g arannyal."
 
 #. [scenario]: id={SKID}
 #: Bad_Moon_Rising/utils/skirmish.cfg:1363
@@ -11011,6 +11013,9 @@ msgid ""
 "recruits.  Your veterans are also spread out, so it becomes increasingly "
 "more expensive to send word to them that they are needed."
 msgstr ""
+"Menetelés közben az egységek szétszóródtak, így korlátozott számban "
+"toborozhatsz újakat. A tapasztalt harcosaid úgyszintén messze vannak, így "
+"sokkal többe kerül őket visszahívni."
 
 #. [side]: type={FOETYPE}, id=Leader
 #: Bad_Moon_Rising/utils/skirmish.cfg:1409
