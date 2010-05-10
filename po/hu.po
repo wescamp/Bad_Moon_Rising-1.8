@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
-"POT-Creation-Date: 2010-04-24 11:10+0200\n"
+"POT-Creation-Date: 2010-05-11 00:29+0200\n"
 "PO-Revision-Date: 2010-05-04 11:42+0100\n"
 "Last-Translator: Kelemen Zoltán <kelemen_zoltan@freemail.hu>\n"
 "Language-Team: none\n"
@@ -71,10 +71,11 @@ msgstr "Vérizzadásos"
 
 #. [campaign]: id=Bad_Moon_Rising_I
 #: Bad_Moon_Rising/_main.cfg:36
+#, fuzzy
 msgid ""
 "A soldier of Weldyn is captured by a necromancer. His attempt to escape sets "
 "events in motion that could have consequences for all life on the planet. "
-"(Quick campaign, no recruiting.  version 0.9.8)"
+"(Quick campaign, no recruiting.  version 0.9.11)"
 msgstr ""
 "Egy weldyni katonát foglyul ejt egy holtidéző. Szökési kísérlete olyan "
 "események elindítójává válik, amelyek a bolygó minden élőlényére komoly "
@@ -110,10 +111,11 @@ msgstr "Alvezér"
 
 #. [campaign]: id=Bad_Moon_Rising
 #: Bad_Moon_Rising/_main.cfg:58
+#, fuzzy
 msgid ""
 "The best of intentions often do not lead to the best results. The new King "
 "was cruel, but the rebellion unwittingly unleashes an even greater evil on "
-"the world. (version 0.9.8)"
+"the world. (version 0.9.11)"
 msgstr ""
 "Olykor a jószándék nem vezet jóra. Az új király kegyetlen volt, de az ellene "
 "való lázadás csak még nagyobb gonoszságot szabadított a világra. (0.9.8-os "
@@ -131,9 +133,10 @@ msgstr "RHKF3"
 
 #. [campaign]: id=Bad_Moon_Rising_III
 #: Bad_Moon_Rising/_main.cfg:80
+#, fuzzy
 msgid ""
 "Battles were won, but the war is not over. The Ukians find they did not "
-"fully understand just how much danger the world is in. (version 0.9.8)"
+"fully understand just how much danger the world is in. (version 0.9.11)"
 msgstr ""
 "A csatát megnyerték, de a háború még korántsem ért véget. Az ukiaiaknak rá "
 "kellett jönniük, hogy nem is sejtették, mekkora veszélyben van a világ. "
@@ -177,7 +180,7 @@ msgstr "Vulkán"
 #. [unit]: id=Scarrion, type=Dark Messiah
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:212
 #: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:33
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:66
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:210
 #: Bad_Moon_Rising/scenarios1/0_04_Darkside.cfg:61
 #: Bad_Moon_Rising/scenarios1/0_01_Abandoned.cfg:59
 #: Bad_Moon_Rising/scenarios1/0_05_Payback.cfg:73
@@ -354,7 +357,7 @@ msgid "Death of Therion"
 msgstr "Therion elesik"
 
 #. [objective]: condition=lose
-#: Bad_Moon_Rising/utils/skirmish.cfg:1389
+#: Bad_Moon_Rising/utils/skirmish.cfg:1482
 #: Bad_Moon_Rising/scenarios1/0_01_Abandoned.cfg:51
 #: Bad_Moon_Rising/scenarios2/1_04_Fort.cfg:40
 #: Bad_Moon_Rising/scenarios2/1_08_Rumble.cfg:38
@@ -559,7 +562,7 @@ msgid "I blame Bersohn. Damn his soul..."
 msgstr "Ezért Bersohn fizetni fog! A szemét..."
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:273
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:281
 #: Bad_Moon_Rising/scenarios1/0_01_Abandoned.cfg:412
 msgid "Arh! I don't even know what I died for..."
 msgstr "Argh! Azt sem tudom, miért halok meg..."
@@ -575,7 +578,7 @@ msgid "Let's get out of here!"
 msgstr "Na tűnjünk el innen!"
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:298
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:322
 #: Bad_Moon_Rising/scenarios1/0_01_Abandoned.cfg:450
 msgid "Oh, I wanted to see the sun again..."
 msgstr "Ó, én még látni akartam a napot..."
@@ -599,7 +602,7 @@ msgstr "Scarrion kitart a körök végéig"
 
 #. [side]: type=Necromancer, id=Malevan
 #: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:43
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:95
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:221
 #: Bad_Moon_Rising/scenarios1/0_05_Payback.cfg:150
 msgid "Malevan"
 msgstr "Malevan"
@@ -662,23 +665,23 @@ msgstr ""
 
 #. [message]: speaker=Scarrion
 #: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:260
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:352
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:552
 #: Bad_Moon_Rising/scenarios1/0_04_Darkside.cfg:351
 msgid "I blame Bersohn, damn his soul..."
 msgstr "Ezért Bersohn fizetni fog! A szemét... "
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:277
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:285
 msgid "Therion!"
 msgstr "Therion!"
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:287
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:303
 msgid "Thanks for nothing..."
 msgstr "Kösz a semmiért..."
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:306
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:330
 msgid ""
 "(Therion was right, this looks hopeless...)  I'm not scared, Foul One! With "
 "every ounce of strength I have, I will send your damned corpses back to the "
@@ -689,12 +692,12 @@ msgstr ""
 "kreálmányaidra, és a kukacokhoz küldöm őket! És téged is, velük együtt!"
 
 #. [message]: speaker=Malevan
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:310
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:334
 msgid "Haha! Such vigor, I think I have a use for you!"
 msgstr "Haha! Micsoda erő, talán még én is fel tudlak használni!"
 
 #. [message]: speaker=Malevan
-#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:314
+#: Bad_Moon_Rising/scenarios1/0_02_Bad.cfg:338
 msgid "Round'em up! Throw them in the dungeon!"
 msgstr "Fogjátok el őket! Aztán a pincébe velük!"
 
@@ -836,23 +839,38 @@ msgstr ""
 "Tipp: Óriási túlerővel kell szembenézned. Ne vesztegesd az időt "
 "felderítésre, csak menj északra."
 
-#. [unit]: type=Ghost, id=GAltos
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:75
-msgid "Ghost of Altos"
-msgstr "Altos szelleme"
-
-#. [unit]: type=Ghost, id=GTherion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:81
-msgid "Ghost of Therion"
-msgstr "Therion szelleme"
-
-#. [unit]: type=Ghost, id=GRussle
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:87
+#. [unit]: type=BMR_Ghost_Footpad, id=GRussle
+#. [unit]: type=BMR_Ghost_Outlaw, id=GRussle
+#. [unit]: type=BMR_Ghost_Fugitive, id=GRussle
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:69
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:80
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:91
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:101
 msgid "Ghost of Russle"
 msgstr "Russie szelleme"
 
+#. [unit]: type=BMR_Ghost_Dwarvish_Fighter, id=GAltos
+#. [unit]: type=BMR_Ghost_Steelclad, id=GAltos
+#. [unit]: type=BMR_Ghost_Dwarvish_Lord, id=GAltos
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:117
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:128
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:139
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:150
+msgid "Ghost of Altos"
+msgstr "Altos szelleme"
+
+#. [unit]: type=BMR_Ghost_Bowman, id=GTherion
+#. [unit]: type=BMR_Ghost_Longbowman, id=GTherion
+#. [unit]: type=BMR_Ghost_Master_Bowman, id=GTherion
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:165
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:176
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:187
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:197
+msgid "Ghost of Therion"
+msgstr "Therion szelleme"
+
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:276
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:440
 msgid ""
 "Malevan is to the west, but there is another path to the north. It leads "
 "deeper into the cave, but the undead do not roam the corridors. It's my only "
@@ -862,17 +880,17 @@ msgstr ""
 "barlangba, de a folyosón nem kószálnak élőholtak. Ez az egyetlen remény. "
 
 #. [message]: speaker=GTherion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:280
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:444
 msgid "Scarrion... Don't forget us..."
 msgstr "Scarrion... Ne felejts el minket..."
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:284
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:448
 msgid "Therion? How can this be?"
 msgstr "Therion? Ez hogy lehet?"
 
 #. [message]: speaker=GTherion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:288
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:452
 msgid ""
 "Malevan is getting sloppy, distracted by his quest for the knowledge of this "
 "cave. We can help you... If you succeed, this will not have been for... "
@@ -883,64 +901,69 @@ msgstr ""
 "hiábavaló."
 
 #. [message]: speaker=GAltos
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:292
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:456
 msgid "We cannot go with you though... We are tied to this cave..."
 msgstr "Habár nem mehetünk  veled... Ehhez a barlanghoz vagyunk kötve..."
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:296
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:460
 msgid "I will make sure Malevan pays for this!"
 msgstr "Biztos, hogy Malevan meg fog fizetni ezért!"
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:308
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:472
 msgid ""
 "I think I'm clear of Malevan's slaves. I will make him pay threefold for "
 "what he has done to us!"
 msgstr "Azt hiszem leráztam Malevan szolgáit. Háromszor verem ezt rajta le!"
 
 #. [message]: speaker=GAltos
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:312
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:476
 msgid "Good luck, Scarrion."
 msgstr "Sok szerencsét, Scarrion!"
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:329
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:493
 msgid "Why don't I just kill the necromancer..."
 msgstr "Miért ne ölhetném meg csak úgy egyszerűen a holtidézőt..."
 
 #. [message]: speaker=Malevan
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:333
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:497
 msgid "Don't be ridiculous!"
 msgstr "Ne légy nevetséges!"
 
+#. [message]: speaker=Malevan
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:520
+msgid "That was a mistake, dear fellow!"
+msgstr ""
+
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:366
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:566
 msgid "Ah, but there is no rest for me..."
 msgstr "Áhh, de még nem pihenhetek meg..."
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:397
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:599
 msgid "This does not end..."
 msgstr "Ezzel még nincs vége..."
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:429
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:633
 msgid "Here we go again..."
 msgstr "Újra itt vagyok..."
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:461
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:667
 msgid "Uh-oh..."
 msgstr "Uh-oh..."
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:477
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:683
 msgid "(Therion was right, this looks hopeless...)  Damn corpses!"
 msgstr "(Therionnak igaza volt, ez reménytelen...) Átkozott élőholtak!"
 
 #. [message]: speaker=Malevan
-#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:481
+#: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:687
 msgid "Just where do you think you're going!?"
 msgstr "Ugyan hová mennél!?"
 
@@ -1839,11 +1862,11 @@ msgstr "Lorenzon, benned van minden reményünk... Gornath népe mögötted áll
 #: Bad_Moon_Rising/scenarios2/1_04_Fort.cfg:189
 #: Bad_Moon_Rising/scenarios2/1_08_World.cfg:251
 #: Bad_Moon_Rising/scenarios2/1_01_Enough.cfg:416
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:442
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:450
 #: Bad_Moon_Rising/scenarios2/1_04_World.cfg:234
 #: Bad_Moon_Rising/scenarios2/1_07_Crush.cfg:399
 #: Bad_Moon_Rising/scenarios2/1_09_World.cfg:219
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:304
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:305
 #: Bad_Moon_Rising/scenarios2/1_03_Camp.cfg:259
 #: Bad_Moon_Rising/scenarios2/1_02_World.cfg:228
 #: Bad_Moon_Rising/scenarios2/1_05_Defend.cfg:317
@@ -2054,8 +2077,10 @@ msgstr ""
 
 #. [message]: speaker=Carusoe
 #: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:249
-msgid "Heh! Now, that's motivation! Go!"
-msgstr "Heh! Ez igazán motiváló! Gyerünk!"
+msgid ""
+"Yeah, heh! Snuff out the intruders and wait for the girls to return...  Now, "
+"that's motivation! Go!"
+msgstr ""
 
 #. [side]: type=Bad Raenna, id=Raenna
 #. [unit]: type=Raenna2, id=Raenna
@@ -2155,7 +2180,7 @@ msgid "Where are they?"
 msgstr "Hol vannak?"
 
 #. [message]: speaker=Lorenzon
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:414
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:422
 msgid ""
 "You are Raenna, correct? It is not safe for you or the others to stay here, "
 "Huric will raze this village when he finds out we've killed his hunting "
@@ -2167,7 +2192,7 @@ msgstr ""
 "íjászaitoknak is."
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:418
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:426
 msgid ""
 "I'm sure you could... Yes, I am Raenna. We will join you, I don't see that "
 "there is any choice."
@@ -2176,12 +2201,12 @@ msgstr ""
 "más lehetőséget."
 
 #. [print]
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:421
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:429
 msgid "Lorenzon can now recruit archers."
 msgstr "Mostantól íjász egységeket is toborozhatsz."
 
 #. [message]: speaker=Duval
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:426
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:434
 msgid "We should be moving along."
 msgstr "Tovább kellene mennünk."
 
@@ -2189,10 +2214,10 @@ msgstr "Tovább kellene mennünk."
 #: Bad_Moon_Rising/scenarios2/1_06_World.cfg:315
 #: Bad_Moon_Rising/scenarios2/1_04_Fort.cfg:202
 #: Bad_Moon_Rising/scenarios2/1_08_World.cfg:264
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:455
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:463
 #: Bad_Moon_Rising/scenarios2/1_04_World.cfg:247
 #: Bad_Moon_Rising/scenarios2/1_06_Guardian.cfg:318
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:317
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:318
 #: Bad_Moon_Rising/scenarios2/1_03_Camp.cfg:286
 #: Bad_Moon_Rising/scenarios2/1_02_World.cfg:241
 #: Bad_Moon_Rising/scenarios2/1_05_Defend.cfg:330
@@ -2200,22 +2225,22 @@ msgid "We had just started..."
 msgstr "Hiszen csak most kezdtük..."
 
 #. [message]: speaker=unit
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:469
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:477
 msgid "Unfortunately, he is a fool..."
 msgstr "Pechünkre, bolond..."
 
 #. [message]: id=Carusoe
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:480
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:488
 msgid "Ah, Huric's forces are here. It's over, traitors!"
 msgstr "Ah, Huric serege megérkezett. Vége a dalnak, árulók!"
 
 #. [message]: id=Bahren
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:484
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:492
 msgid "Yes! His Majesty is here, it's over!"
 msgstr "Igen! Őfelsége megérkezett, vége a dalnak!"
 
 #. [message]: id=Lorenzon
-#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:488
+#: Bad_Moon_Rising/scenarios2/1_02_Rescue.cfg:496
 msgid "Arg! There are so many of them..."
 msgstr "Arg! Olyan sokan vannak..."
 
@@ -2314,7 +2339,7 @@ msgstr "Éppenséggel megá- Mi az ott?"
 #. [message]: speaker=unit
 #: Bad_Moon_Rising/scenarios2/1_06_World.cfg:329
 #: Bad_Moon_Rising/scenarios2/1_04_World.cfg:261
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:331
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:332
 #: Bad_Moon_Rising/scenarios2/1_02_World.cfg:255
 msgid "It's them! Charge!!"
 msgstr "Ők azok! Roham!!"
@@ -2322,7 +2347,7 @@ msgstr "Ők azok! Roham!!"
 #. [message]: id=unit
 #: Bad_Moon_Rising/scenarios2/1_06_World.cfg:333
 #: Bad_Moon_Rising/scenarios2/1_04_World.cfg:265
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:335
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:336
 #: Bad_Moon_Rising/scenarios2/1_02_World.cfg:259
 msgid "Give my regards to Lieutenant Cantwell, traitor!"
 msgstr "Add át az üdvözletemet Cantwell hadnagynak, áruló!"
@@ -2331,7 +2356,7 @@ msgstr "Add át az üdvözletemet Cantwell hadnagynak, áruló!"
 #: Bad_Moon_Rising/scenarios2/1_06_World.cfg:337
 #: Bad_Moon_Rising/scenarios2/1_08_World.cfg:282
 #: Bad_Moon_Rising/scenarios2/1_04_World.cfg:269
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:339
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:340
 #: Bad_Moon_Rising/scenarios2/1_02_World.cfg:263
 msgid "(Gulp!)"
 msgstr " (Nyel egyet)"
@@ -3783,8 +3808,8 @@ msgid "This doesn't look good..."
 msgstr "Valami nem stimmel..."
 
 #. [message]: speaker=Lorenzon
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:251
-#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:281
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:252
+#: Bad_Moon_Rising/scenarios2/1_07_World.cfg:282
 msgid "Hello everybody..."
 msgstr "Helló mindenkinek..."
 
@@ -6548,7 +6573,7 @@ msgstr "Hova rohan? ... ... Uh-oh."
 #. [message]: speaker=unit
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:330
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:384
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:576
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:577
 #: Bad_Moon_Rising/utils/items.cfg:60
 msgid "Woof!"
 msgstr "Vauú!"
@@ -6591,12 +6616,32 @@ msgstr "Hogy lehet Scarrion még mindig életben?"
 #. [message]: speaker=C_Belleros
 #. [message]: speaker=Hrala Gareth
 #. [message]: speaker=Falka Teora
+#. [race]: id=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Dwarvish_Lord, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Longbowman, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Master_Bowman, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Outlaw, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Fugitive, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Footpad, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Bowman, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Steelclad, race=bmr_ghost
+#. [unit_type]: id=BMR_Ghost_Dwarvish_Fighter, race=bmr_ghost
 #: Bad_Moon_Rising/scenarios3/2_07_Dreams2.cfg:907
 #: Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:423
 #: Bad_Moon_Rising/scenarios3/2_05_Tien.cfg:427
 #: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:438
 #: Bad_Moon_Rising/scenarios3/2_05_Blind.cfg:645
 #: Bad_Moon_Rising/scenarios3/2_04_Escape.cfg:641
+#: Bad_Moon_Rising/units/ghosts_race.cfg:11
+#: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:20
+#: Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg:21
+#: Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg:21
+#: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:19
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:21
+#: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:21
+#: Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg:22
+#: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:20
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:20
 msgid "..."
 msgstr "..."
 
@@ -6606,17 +6651,17 @@ msgid "I cannot let him get away this time! Huh!"
 msgstr "Ezúttal nem hagyhatom, hogy megszökjön! Húú!"
 
 #. [message]: speaker=C_Belleros
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:462
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:463
 msgid "I hear orcish war drums, we won't be able to leave the way we came."
 msgstr "Ork dobokat hallok, nem mehetünk vissza arra, amerről jöttünk."
 
 #. [message]: speaker=Carghanna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:466
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:467
 msgid "There was another path southwest of here..."
 msgstr "Délnyugatra innen volt egy másik járat is..."
 
 #. [message]: speaker=C_Belleros
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:470
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:471
 msgid ""
 "Right. We should secure that, and pray that it leads out of this hell-hole. "
 "But we need to give Lorenzon and Raenna a chance to get back before we flee."
@@ -6626,12 +6671,12 @@ msgstr ""
 "visszatérjenek, mielőtt elmegyünk."
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:537
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:538
 msgid "Sir! Are you all right?"
 msgstr "Uram! Jól vagy?"
 
 #. [message]: speaker=Lorenzon
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:542
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:543
 msgid ""
 "Uhhhg... No... I'm not... I may have broke my spine -(grunt)- I can't move "
 "my legs... Scarrion ran off into the darkness, stop him! \n"
@@ -6642,12 +6687,12 @@ msgstr ""
 "*Köhög*"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:546
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:547
 msgid "Sir, you're coughing up blood. I need to get one of the healers-"
 msgstr "Uram, vért köhögsz föl. Szükséged lenne egy gyógyítóra-"
 
 #. [message]: speaker=Lorenzon
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:550
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:551
 msgid ""
 "And how are you going to do that? You need to stop Scarrion! -(cough)-  He's "
 "wounded, you can take him. I'll wait for you right here... -(gasp)- Go!"
@@ -6656,57 +6701,57 @@ msgstr ""
 "elfoghatod. Itt fogok várni rád... -(zihál)- Menj!"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:554
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:555
 msgid "But, Lorenzon, t-"
 msgstr "De Lorenzon, a..."
 
 #. [message]: speaker=Lorenzon
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:558
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:559
 msgid "I'll be fine - Go!"
 msgstr "Én jól vagyok - Menj!"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:562
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:563
 msgid "Yes, sir..."
 msgstr "Igen uram..."
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:567
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:568
 msgid "(Good-bye, Lorenzon...)"
 msgstr "(Ég veled, Lorenzon...)"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:572
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:573
 msgid "Hello there, Cogue Dog..."
 msgstr "Helló, ki van ott? Te vagy az Cogue, kutyuskám...  "
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:580
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:581
 msgid "Yes, I see the trail of blood.  The bastard won't get far."
 msgstr "Igen, látom a vérnyomot. Nem juthat messzire az a szörnyeteg."
 
 #. [message]: speaker=Cogue
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:592
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:593
 msgid "(sniff-sniff-sniff-exhale-sniff) Grrrr!"
 msgstr " Szipp-szipp-szipp (szaglászik) Hrrrr!"
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:607
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:608
 msgid "Ha! You are too late!"
 msgstr "Ha! Elkéstetek!"
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:638
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:639
 msgid "-(cough)- They are free!"
 msgstr "-(cough)- Már kiszabadultak!"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:642
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:643
 msgid "Who is free!? What have you done?"
 msgstr "Kik szabadultak ki? Mit csináltál?"
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:659
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:660
 msgid ""
 "Your new lords are free! -(cough)- Weldyn abdicated responsibility, so now "
 "they will be replaced!"
@@ -6715,12 +6760,12 @@ msgstr ""
 "lesznek cserélve!"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:663
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:664
 msgid "What is 'Weldyn'? What the hell are you talking about?"
 msgstr "Mi az a 'Weldyn'? Miről beszélsz?"
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:667
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:668
 msgid ""
 "Such corruption and abuse of power -(cough)- You are not worthy shepherds -"
 "(gasp)-"
@@ -6729,13 +6774,13 @@ msgstr ""
 "méltók az irányításra -(zihál)-"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:671
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:672
 msgid ""
 "Your words have no meaning... (He is badly wounded, is his mind slipping?)"
 msgstr "A szavaidnak nincs értelme... (Súlyosan megsebesült, félrebeszél?)"
 
 #. [message]: speaker=Athanta
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:680
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:681
 msgid ""
 "Yes, sadly, Scarrion is starting to fade. We have a saying, 'The candle that "
 "burns twice as bright, burns half as long.'  Scarrion has been burning "
@@ -6746,54 +6791,54 @@ msgstr ""
 "teljesített, de már kiégett."
 
 #. [message]: speaker=Scarrion
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:684
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:685
 msgid "What?! No! I did everything you asked! Y-you... GrraaAAHH!"
 msgstr "Micsoda?! Nem! Én mindent megtettem, amit mondtál! Te-Te...  GraaAAHH!"
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:715
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:716
 msgid "(!)  Who are you?"
 msgstr "(!) Ki vagy te?"
 
 #. [message]: speaker=Athanta
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:719
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:720
 msgid ""
 "I've been following your people. You could be useful, you will come with me!"
 msgstr "Követtem a népeteket. Hasznunkra lehetsz, gyere velem! "
 
 #. [message]: speaker=Raenna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:725
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:726
 msgid "No! Belleros!"
 msgstr "Ne! Belleros!"
 
 #. [message]: speaker=Athanta
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:729
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:730
 msgid "We have another saying, 'In the dark, no one can hear you scream'..."
 msgstr ""
 "Van egy másik mondásunk is, 'A sötétben senki nem hallja a sikolyodat'..."
 
 #. [message]: speaker=Cogue
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:741
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:742
 msgid "Woof! Woof! -(whine)-  Woof! Woof!"
 msgstr "Vaúú! Vaúú! -(csahol)- Vaúú! Vaúú! "
 
 #. [message]: speaker=Cogue
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:746
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:747
 msgid "Woof! Woof! Aahoew! -(whine)- Woof!"
 msgstr "Vaúú! Vaúú! va-va-vaú! -(csahol)- Vaúú!"
 
 #. [message]: speaker=C_Belleros
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:750
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:751
 msgid "Do you hear something? It sounds like an upset dog..."
 msgstr "Hallasz valamit? Mintha egy acsarkodó kutya ugatna valahol..."
 
 #. [message]: speaker=Carghanna
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:754
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:755
 msgid "I hear it too... Belleros, we need to leave."
 msgstr "Én is hallom... Belleros, mennünk kell."
 
 #. [message]: speaker=C_Belleros
-#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:758
+#: Bad_Moon_Rising/scenarios3/2_03_Knell.cfg:759
 msgid "What about Raenna and Lorenzon?"
 msgstr "S mi lesz Raennával és Lorenzonnal?"
 
@@ -10348,6 +10393,8 @@ msgstr ""
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/Hostage_Taker.cfg:42
 #: Bad_Moon_Rising/units/Raenna.cfg:195 Bad_Moon_Rising/units/Raenna.cfg:367
+#: Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg:27
+#: Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg:27
 msgid "sword"
 msgstr "kard"
 
@@ -10533,6 +10580,7 @@ msgstr "Max ÉP +2, Mesterlövész képesség, Max TP 30%"
 #. [attack]: type=fire
 #: Bad_Moon_Rising/units/Raenna.cfg:204 Bad_Moon_Rising/units/Raenna.cfg:213
 #: Bad_Moon_Rising/units/Raenna.cfg:376 Bad_Moon_Rising/units/Raenna.cfg:385
+#: Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg:35
 msgid "bow"
 msgstr "íj"
 
@@ -10593,6 +10641,136 @@ msgstr "sokkhullám"
 #: Bad_Moon_Rising/units/Ukian_Dying2.cfg:56
 msgid "strike"
 msgstr "csapás"
+
+#. [unit_type]: id=BMR_Ghost_Bowman, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg:4
+msgid "Ghost Bowman"
+msgstr ""
+
+#. [attack]: type=blade
+#: Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg:26
+#, fuzzy
+msgid "short sword"
+msgstr "kétkezes kard"
+
+#. [unit_type]: id=BMR_Ghost_Dwarvish_Fighter, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:4
+msgid "Ghost Dwarvish Fighter"
+msgstr ""
+
+#. [attack]: type=blade
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:35
+msgid "axe"
+msgstr ""
+
+#. [attack]: type=impact
+#: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:49
+#: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:49
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:43
+#, fuzzy
+msgid "hammer"
+msgstr "Kiméra"
+
+#. [unit_type]: id=BMR_Ghost_Footpad, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:4
+msgid "Ghost Footpad"
+msgstr ""
+
+#. [attack]: type=impact
+#: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:26
+msgid "club"
+msgstr ""
+
+#. [attack]: type=impact
+#: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:32
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:38
+#: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:35
+msgid "sling"
+msgstr ""
+
+#. [female]
+#: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:170
+msgid "female^Ghost Footpad"
+msgstr ""
+
+#. [unit_type]: id=BMR_Ghost_Fugitive, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:5
+msgid "Ghost Fugitive"
+msgstr ""
+
+#. [attack]: type=impact
+#: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:24
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:29
+msgid "mace"
+msgstr ""
+
+#. [female]
+#: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:115
+msgid "female^Ghost Fugitive"
+msgstr ""
+
+#. [unit_type]: id=BMR_Ghost_Longbowman, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg:4
+msgid "Ghost Longbowman"
+msgstr ""
+
+#. [attack]: type=pierce
+#: Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg:36
+#: Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg:36
+#, fuzzy
+msgid "longbow"
+msgstr "íj"
+
+#. [unit_type]: id=BMR_Ghost_Dwarvish_Lord, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:4
+msgid "Ghost Dwarvish Lord"
+msgstr ""
+
+#. [attack]: type=blade
+#: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:40
+#: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:40
+msgid "battle axe"
+msgstr ""
+
+#. [attack]: type=blade
+#: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:58
+msgid "hatchet"
+msgstr ""
+
+#. [unit_type]: id=BMR_Ghost_Master_Bowman, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg:4
+msgid "Ghost Master Bowman"
+msgstr ""
+
+#. [unit_type]: id=BMR_Ghost_Outlaw, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:4
+msgid "Ghost Outlaw"
+msgstr ""
+
+#. [female]
+#: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:107
+msgid "female^Outlaw"
+msgstr ""
+
+#. [unit_type]: id=BMR_Ghost_Steelclad, race=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:4
+msgid "Ghost Steelclad"
+msgstr ""
+
+#. [race]: id=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts_race.cfg:6
+msgid "race^Ghost"
+msgstr ""
+
+#. [race]: id=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts_race.cfg:7
+msgid "race+female^Ghost"
+msgstr ""
+
+#. [race]: id=bmr_ghost
+#: Bad_Moon_Rising/units/ghosts_race.cfg:8
+msgid "race^Ghosts"
+msgstr ""
 
 #. [scenario]: id=ZZ_error
 #: Bad_Moon_Rising/utils/ZZ_error.cfg:4
@@ -10981,33 +11159,33 @@ msgid "Ouch..."
 msgstr "Aúúú..."
 
 #. [print]
-#: Bad_Moon_Rising/utils/skirmish.cfg:1074
+#: Bad_Moon_Rising/utils/skirmish.cfg:1165
 msgid "Recall Cost: $sk_recallcost2|g"
 msgstr "Visszahívás költsége: $sk_recallcost2|g"
 
 #. [message]
-#: Bad_Moon_Rising/utils/skirmish.cfg:1118
-#: Bad_Moon_Rising/utils/skirmish.cfg:1148
+#: Bad_Moon_Rising/utils/skirmish.cfg:1206
+#: Bad_Moon_Rising/utils/skirmish.cfg:1241
 msgid "They had some resources, we are $sk_prize|g richer."
 msgstr "Volt egy kis pénzük. Gazdagabbak lettünk $sk_prize|g arannyal."
 
 #. [scenario]: id={SKID}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1363
+#: Bad_Moon_Rising/utils/skirmish.cfg:1456
 msgid "Skirmish"
 msgstr "Csetepaté"
 
 #. [objective]: condition=win
-#: Bad_Moon_Rising/utils/skirmish.cfg:1381
+#: Bad_Moon_Rising/utils/skirmish.cfg:1474
 msgid "Defeat all enemy units"
 msgstr "Legyőzöd az összes ellenséges vezért."
 
 #. [objective]: condition=lose
-#: Bad_Moon_Rising/utils/skirmish.cfg:1385
+#: Bad_Moon_Rising/utils/skirmish.cfg:1478
 msgid "Death of {PLAYERID}"
 msgstr "{PLAYERID} elesik"
 
 #. [objectives]
-#: Bad_Moon_Rising/utils/skirmish.cfg:1391
+#: Bad_Moon_Rising/utils/skirmish.cfg:1484
 msgid ""
 "Forces are spread out when moving, so you are very limited in getting new "
 "recruits.  Your veterans are also spread out, so it becomes increasingly "
@@ -11018,17 +11196,17 @@ msgstr ""
 "sokkal többe kerül őket visszahívni."
 
 #. [side]: type={FOETYPE}, id=Leader
-#: Bad_Moon_Rising/utils/skirmish.cfg:1409
+#: Bad_Moon_Rising/utils/skirmish.cfg:1502
 msgid "Enemy Leader"
 msgstr "Ellenséges vezér"
 
 #. [message]: speaker=Leader
-#: Bad_Moon_Rising/utils/skirmish.cfg:1538
+#: Bad_Moon_Rising/utils/skirmish.cfg:1631
 msgid "I'm out of here!"
 msgstr "Ebből ennyi elég!"
 
 #. [message]: speaker={PLAYERID}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1545
+#: Bad_Moon_Rising/utils/skirmish.cfg:1638
 msgid ""
 "That one will bring others, we don't have time to scavenge resources from "
 "the dead..."
@@ -11038,46 +11216,46 @@ msgstr ""
 
 #. [message]: speaker={ID1}
 #. [message]: speaker={ID2}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1597
-#: Bad_Moon_Rising/utils/skirmish.cfg:1619
-#: Bad_Moon_Rising/utils/skirmish.cfg:1630
-#: Bad_Moon_Rising/utils/skirmish.cfg:1655
+#: Bad_Moon_Rising/utils/skirmish.cfg:1690
+#: Bad_Moon_Rising/utils/skirmish.cfg:1712
+#: Bad_Moon_Rising/utils/skirmish.cfg:1723
+#: Bad_Moon_Rising/utils/skirmish.cfg:1748
 msgid "We should have stayed on the path..."
 msgstr "Az úton kellett volna maradnunk... "
 
 #. [message]: speaker={ID2}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1601
+#: Bad_Moon_Rising/utils/skirmish.cfg:1694
 msgid "You always say that."
 msgstr "Mindig ezt mondod."
 
 #. [message]: speaker={ID1}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1608
-#: Bad_Moon_Rising/utils/skirmish.cfg:1641
+#: Bad_Moon_Rising/utils/skirmish.cfg:1701
+#: Bad_Moon_Rising/utils/skirmish.cfg:1734
 msgid "This is a chance to train our forces."
 msgstr "Ez is egy lehetőség az egységeink kiképzésére."
 
 #. [message]: speaker={ID2}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1612
+#: Bad_Moon_Rising/utils/skirmish.cfg:1705
 msgid "That's one way to look at it. "
 msgstr "Így is nevezhetjük."
 
 #. [message]: speaker={ID1}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1623
+#: Bad_Moon_Rising/utils/skirmish.cfg:1716
 msgid "I'm not laughing."
 msgstr "Nincs kedvem nevetni."
 
 #. [message]: speaker={ID2}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1634
+#: Bad_Moon_Rising/utils/skirmish.cfg:1727
 msgid "Indeed."
 msgstr "Valóban."
 
 #. [message]: speaker={ID2}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1645
+#: Bad_Moon_Rising/utils/skirmish.cfg:1738
 msgid "Do we really have time for this?"
 msgstr "Tényleg van erre időnk?"
 
 #. [message]: speaker={ID1}
-#: Bad_Moon_Rising/utils/skirmish.cfg:1649
+#: Bad_Moon_Rising/utils/skirmish.cfg:1742
 msgid "Not really, so let's get this over with..."
 msgstr "Nem sok, essünk túl rajta gyorsan..."
 
@@ -11095,6 +11273,9 @@ msgstr "Hófúvás"
 #: Bad_Moon_Rising/utils/terrain.cfg:34
 msgid "Thin Ice"
 msgstr "Vékony jég"
+
+#~ msgid "Heh! Now, that's motivation! Go!"
+#~ msgstr "Heh! Ez igazán motiváló! Gyerünk!"
 
 #~ msgid ""
 #~ "Forces are spread out when moving, and your leader doesn't personally "
