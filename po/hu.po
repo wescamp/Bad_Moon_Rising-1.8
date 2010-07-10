@@ -3,9 +3,10 @@ msgstr ""
 "Project-Id-Version: wescamp-i 18n\n"
 "Report-Msgid-Bugs-To: http://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2010-05-24 21:56+0200\n"
-"PO-Revision-Date: 2010-05-04 11:42+0100\n"
+"PO-Revision-Date: 2010-06-29 12:42+0100\n"
 "Last-Translator: Kelemen Zoltán <kelemen_zoltan@freemail.hu>\n"
 "Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -71,7 +72,6 @@ msgstr "Vérizzadásos"
 
 #. [campaign]: id=Bad_Moon_Rising_I
 #: Bad_Moon_Rising/_main.cfg:36
-#, fuzzy
 msgid ""
 "A soldier of Weldyn is captured by a necromancer. His attempt to escape sets "
 "events in motion that could have consequences for all life on the planet. "
@@ -79,7 +79,7 @@ msgid ""
 msgstr ""
 "Egy weldyni katonát foglyul ejt egy holtidéző. Szökési kísérlete olyan "
 "események elindítójává válik, amelyek a bolygó minden élőlényére komoly "
-"hatással bírnak. (Gyors küldetés, nincs toborzás. 0.9.8-as verzió) "
+"hatással bírnak. (Gyors küldetés, nincs toborzás. 0.9.13-as verzió) "
 
 #. [campaign]: id=Bad_Moon_Rising
 #: Bad_Moon_Rising/_main.cfg:44
@@ -111,14 +111,13 @@ msgstr "Alvezér"
 
 #. [campaign]: id=Bad_Moon_Rising
 #: Bad_Moon_Rising/_main.cfg:58
-#, fuzzy
 msgid ""
 "The best of intentions often do not lead to the best results. The new King "
 "was cruel, but the rebellion unwittingly unleashes an even greater evil on "
 "the world. (version 0.9.13)"
 msgstr ""
 "Olykor a jószándék nem vezet jóra. Az új király kegyetlen volt, de az ellene "
-"való lázadás csak még nagyobb gonoszságot szabadított a világra. (0.9.8-os "
+"való lázadás csak még nagyobb gonoszságot szabadított a világra. (0.9.13-as "
 "verzió)"
 
 #. [campaign]: id=Bad_Moon_Rising_III
@@ -133,14 +132,13 @@ msgstr "RHKF3"
 
 #. [campaign]: id=Bad_Moon_Rising_III
 #: Bad_Moon_Rising/_main.cfg:80
-#, fuzzy
 msgid ""
 "Battles were won, but the war is not over. The Ukians find they did not "
 "fully understand just how much danger the world is in. (version 0.9.13)"
 msgstr ""
 "A csatát megnyerték, de a háború még korántsem ért véget. Az ukiaiaknak rá "
 "kellett jönniük, hogy nem is sejtették, mekkora veszélyben van a világ. "
-"(0.9.8-os verzió)"
+"(0.9.13-as verzió)"
 
 #. [about]
 #: Bad_Moon_Rising/about.cfg:7
@@ -707,11 +705,10 @@ msgstr "Fogjátok el őket! Aztán a pincébe velük!"
 #. [scenario]: id=02b_Trial
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:4
 msgid "A Trial"
-msgstr ""
+msgstr "Próba"
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:18
-#, fuzzy
 msgid ""
 "The Necromancer's mindless servants overwhelmed Scarrion, but did not kill "
 "him. They forced him into a dungeon, their mutilated, emotionless faces "
@@ -719,29 +716,22 @@ msgid ""
 "answers or explanations."
 msgstr ""
 "A holtidéző agyatlan szolgái felülkerekedtek Scarrionon, de nem ölték meg. "
-"Bezárták egy cellába a pincében; üres érzéketlen arcuk előrevetítette "
+"Bezárták egy cellába a pincében; üres, érzéketlen arcuk előrevetítette "
 "mesterük torz szándékát, de egyébként nem válaszoltak a kérdésekre, s nem "
-"magyaráztak semmit. Scarrion napokig senyvedett a hideg, mocskos, sötét "
-"cellában, az élelem és víz hiányától ereje megfogyatkozott. Malevan akkor "
-"jött le hozzá, mikor már a halál környékezte, és tett egy ajánlatot neki: "
-"vagy élő titkára lesz, vagy agyatlan zombiként fogja szolgálni."
+"magyaráztak semmit."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:22
-#, fuzzy
 msgid ""
 "There he stayed for days, alone in the cold, foul, dark cell, his strength "
 "fading from lack of food or water. Malevan came by when he figured Scarrion "
 "was close to death, and gave him a choice: become his assistant or become a "
 "walking corpse servant."
 msgstr ""
-"A holtidéző agyatlan szolgái felülkerekedtek Scarrionon, de nem ölték meg. "
-"Bezárták egy cellába a pincében; üres érzéketlen arcuk előrevetítette "
-"mesterük torz szándékát, de egyébként nem válaszoltak a kérdésekre, s nem "
-"magyaráztak semmit. Scarrion napokig senyvedett a hideg, mocskos, sötét "
-"cellában, az élelem és víz hiányától ereje megfogyatkozott. Malevan akkor "
-"jött le hozzá, mikor már a halál környékezte, és tett egy ajánlatot neki: "
-"vagy élő titkára lesz, vagy agyatlan zombiként fogja szolgálni."
+"Scarrion napokig senyvedett a hideg, mocskos, sötét cellában, az élelem és "
+"víz hiányától ereje megfogyatkozott. Malevan akkor jött le hozzá, mikor már "
+"a halál környékezte, és tett egy ajánlatot neki: vagy élő titkára lesz, vagy "
+"agyatlan zombiként fogja szolgálni."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:26
@@ -752,6 +742,11 @@ msgid ""
 "need to see how my recent discovery interacts with the living.  If you "
 "survive, I will permit you to be my assistant...'"
 msgstr ""
+"Scarrion nem akart meghalni, tehát legyűrte félelmét és undorát, s "
+"beleegyezett, hogy Malevannak dolgozik. A holtidéző kihozta Scarriont a "
+"cellájából, s visszadta a régi felszerelését, 'Most pedig próbára teszlek "
+"ifjú ember. Látnom kell, hogy a felfedezésem hogyan hat az élőkre. Ha "
+"túléled, akkor a segítőm lehetsz...' "
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:30
@@ -759,6 +754,8 @@ msgid ""
 "Scarrion felt the insensitive and painful grip of the undead wardens drag "
 "him to a doorway, where they shoved him through without pause."
 msgstr ""
+"Érzéketlen karok ragadták meg, s tuszkolták egy ajtónyílás felé, majd "
+"keresztül is lökték azon."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:33
@@ -768,6 +765,10 @@ msgid ""
 "chamber with a mixture of sand and cave-floor.  On the far end of the "
 "chamber was a shadowy figure."
 msgstr ""
+"Scarrion három métert zuhant, s valamiféle homokos földön landolt némi "
+"hempergőzés után. Ahogy feltápászkodott, s körülnézett, rájött, hogy egy "
+"homokos talajú, kör alakú barlangi fülkébe esett, amelynek mennyezete nagyon "
+"magasan volt. A fülke távoli részében egy árnyékba burkolózó alak volt."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:36
@@ -777,11 +778,15 @@ msgid ""
 "was to live.  He moved in to engage, and noticed through sideways glances "
 "that the chamber was littered with objects that might be of use..."
 msgstr ""
+"Scarrion mérhetetlen gyűlöletet érzett az árnyalak felől áradni, s hirtelen "
+"ráébredt, hogy ezt az árnyalakot kell elpusztítania, ha élni akar. "
+"Támadóállásba helyezkedett, s közben oldalra pillantva mindenféle kacaton "
+"akadt meg a szeme, amiket akár fel is használhatna..."
 
 #. [objective]: condition=win
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:45
 msgid "Defeat Opponent"
-msgstr ""
+msgstr "Legyőzöd az ellenfelet"
 
 #. [objective]: condition=lose
 #: Bad_Moon_Rising/scenarios3/2_04_Pond.cfg:40
@@ -805,10 +810,8 @@ msgstr "Túlléped az időt"
 
 #. [objectives]
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:55
-#, fuzzy
 msgid "This scenario is under construction, but should still mostly work."
-msgstr ""
-"Ez a küldetés nagyjából készen van, de még dolgozunk az utolsó simításokon."
+msgstr "Ez a küldetés nagyjából készen van, de már működnie kell."
 
 #. [unit]: type=Phantom Cloak, id=Opponent
 #. [unit]: type=Phantom Shadow, id=Opponent
@@ -824,20 +827,21 @@ msgstr ""
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:122
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:131
 msgid "Shadow Opponent"
-msgstr ""
+msgstr "Árnyalak"
 
 #. [message]: speaker=Scarrion
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:183
 msgid ""
 "(I'm now a slave or gladiator?  I must deal with the enemy at hand, but...)"
 msgstr ""
+"(Most rabszolga vagyok, vagy gladiátor? Puszta kézzel kell megküzdenem az "
+"ellenséggel, hacsak...)"
 
 #. [message]: speaker=Scarrion
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:228
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:263
-#, fuzzy
 msgid "I think I killed it..."
-msgstr "Ne gondoljátok, hogy békében nyugodhatok..."
+msgstr "Azt hiszem, megöltem..."
 
 #. [message]: speaker=Raenna
 #. [message]: speaker=narrator
@@ -849,9 +853,8 @@ msgstr "Valóban..."
 
 #. [message]: speaker=Scarrion
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:279
-#, fuzzy
 msgid "(Therion was right, this looks hopeless...)"
-msgstr "(Therionnak igaza volt, ez reménytelen...) Átkozott élőholtak!"
+msgstr "(Therionnak igaza volt, ez reménytelen...)"
 
 #. [message]: speaker=narrator
 #: Bad_Moon_Rising/scenarios1/0_02b_Trial.cfg:283
@@ -859,6 +862,7 @@ msgid ""
 "I'll need to find someone more aggressive.  I suppose this fellow could make "
 "a good undead servant."
 msgstr ""
+"Keresnem kell egy erősebb ellenfelet. De élőholt szolgának ez is megteszi."
 
 #. [scenario]: id=03_Unbreakable
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:4
@@ -871,6 +875,8 @@ msgid ""
 "When the shadow was defeated, two undead warriors marched forward to grab "
 "Scarrion and drag him back to his cell."
 msgstr ""
+"Amikor az árnyalakot legyőzte, két élőholt harcos masírozott be a "
+"küzdőtérre, megragadták Scarriont és visszavitték a cellájába."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:22
@@ -878,6 +884,8 @@ msgid ""
 "Hours later, when he tried to sleep on the cold floor of his cell, Scarrion "
 "noticed a shadowy figure standing over him."
 msgstr ""
+"Órákkal később, amikor hiába próbált aludni cellája hideg kövezetén, "
+"Scarrion egyszercsak meglátott egy föléje hajoló sötét alakot."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:26
@@ -885,6 +893,8 @@ msgid ""
 "Scarrion's eyes could not focus on the figure, and when the scuffing sounds "
 "of an approaching undead grew closer, the shadow departed."
 msgstr ""
+"Scarrionnak nem volt ideje alaposabban megfigyelni az alakot, mert egy "
+"közeledő élőholt caplatásának hangjaira az árnyék szétoszlott."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:30
@@ -894,22 +904,24 @@ msgid ""
 "When the old man came and offered his ultimatum, Scarrion agreed to continue "
 "to work for Malevan."
 msgstr ""
+"Scarrionnak nem volt tudomása a holtidéző tevékenységéről, de azt tudta, "
+"hogy valami különleges történik, s talán számára is kínálkozik kiút "
+"jelenlegi sanyarú helyzetéből. Amikor az öreg jött és egy végső ajánlatot "
+"tett, Scarrion beleegyezett, hogy tovább dolgozik Malevannak."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:34
-#, fuzzy
 msgid ""
 "The necromancer wanted to transcribe painted glyphs from stone to paper "
 "notebooks, a task that was tedious but still too complex for a mindless "
 "undead. Scarrion suspected he would be killed when the task was complete, so "
 "he was always alert for something that could help him escape."
 msgstr ""
-"Scarrion nem akart meghalni, ezért leküzdötte undorát és félelmét, s ráállt "
-"az alkura, hogy Malevan mellé szegődik. A holtidéző át akarta másolni a "
-"falra festett hieroglifákat a jegyzetfüzetébe; a feladat unalmas volt, de "
-"túl bonyolult egy agyatlan élőholtnak. Scarrion sejtette, hogy mihelyst "
-"befejezi a munkát, vele is végezni fog a holtidéző, így szeme állandóan a "
-"szökési lehetőségeket fürkészte."
+"A holtidéző át akarta másolni a falra festett hieroglifákat a "
+"jegyzetfüzetébe; a feladat unalmas volt, de túl bonyolult egy agyatlan "
+"élőholtnak. Scarrion sejtette, hogy mihelyst befejezi a munkát, vele is "
+"végezni fog a holtidéző, így szeme állandóan a szökési lehetőségeket "
+"fürkészte."
 
 #. [part]
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:38
@@ -1085,7 +1097,7 @@ msgstr "Ne légy nevetséges!"
 #. [message]: speaker=Malevan
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:532
 msgid "That was a mistake, dear fellow!"
-msgstr ""
+msgstr "Elhibáztad, barátocskám!"
 
 #. [message]: speaker=unit
 #: Bad_Moon_Rising/scenarios1/0_03_Unbreakable.cfg:578
@@ -2231,6 +2243,8 @@ msgid ""
 "Yeah, heh! Snuff out the intruders and wait for the girls to return...  Now, "
 "that's motivation! Go!"
 msgstr ""
+"Ha-ha! Kinyiffantani a betolakodókat, aztán bevárni a csajok visszatértét... "
+"Remek program! Gyerünk!"
 
 #. [side]: type=Bad Raenna, id=Raenna
 #. [unit]: type=Raenna2, id=Raenna
@@ -10790,132 +10804,129 @@ msgstr "csapás"
 #. [unit_type]: id=BMR_Ghost_Bowman, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg:4
 msgid "Ghost Bowman"
-msgstr ""
+msgstr "Szellem íjász"
 
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/ghosts/Ghost_Bowman.cfg:26
-#, fuzzy
 msgid "short sword"
-msgstr "kétkezes kard"
+msgstr "rövid kard"
 
 #. [unit_type]: id=BMR_Ghost_Dwarvish_Fighter, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:4
 msgid "Ghost Dwarvish Fighter"
-msgstr ""
+msgstr "Törp harcos szellem"
 
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:35
 msgid "axe"
-msgstr ""
+msgstr "bárd"
 
 #. [attack]: type=impact
 #: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:49
 #: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:49
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fighter.cfg:43
-#, fuzzy
 msgid "hammer"
-msgstr "Kiméra"
+msgstr "pöröly"
 
 #. [unit_type]: id=BMR_Ghost_Footpad, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:4
 msgid "Ghost Footpad"
-msgstr ""
+msgstr "Útonálló szellem"
 
 #. [attack]: type=impact
 #: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:26
 msgid "club"
-msgstr ""
+msgstr "fütykös"
 
 #. [attack]: type=impact
 #: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:32
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:38
 #: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:35
 msgid "sling"
-msgstr ""
+msgstr "parittya"
 
 #. [female]
 #: Bad_Moon_Rising/units/ghosts/Ghost_Footpad.cfg:170
 msgid "female^Ghost Footpad"
-msgstr ""
+msgstr "Útonálló szellemnő"
 
 #. [unit_type]: id=BMR_Ghost_Fugitive, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:5
 msgid "Ghost Fugitive"
-msgstr ""
+msgstr "Szökevény szellem"
 
 #. [attack]: type=impact
 #: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:24
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:29
 msgid "mace"
-msgstr ""
+msgstr "buzogány"
 
 #. [female]
 #: Bad_Moon_Rising/units/ghosts/Ghost_Fugitive.cfg:115
 msgid "female^Ghost Fugitive"
-msgstr ""
+msgstr "Szökevény szellemnő"
 
 #. [unit_type]: id=BMR_Ghost_Longbowman, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg:4
 msgid "Ghost Longbowman"
-msgstr ""
+msgstr "Szellem hosszúíj nyilas"
 
 #. [attack]: type=pierce
 #: Bad_Moon_Rising/units/ghosts/Ghost_Longbowman.cfg:36
 #: Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg:36
-#, fuzzy
 msgid "longbow"
-msgstr "íj"
+msgstr "hosszú íj"
 
 #. [unit_type]: id=BMR_Ghost_Dwarvish_Lord, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:4
 msgid "Ghost Dwarvish Lord"
-msgstr ""
+msgstr "Törp úr szellem"
 
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:40
 #: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:40
 msgid "battle axe"
-msgstr ""
+msgstr "fokos"
 
 #. [attack]: type=blade
 #: Bad_Moon_Rising/units/ghosts/Ghost_Lord.cfg:58
 msgid "hatchet"
-msgstr ""
+msgstr "balta"
 
 #. [unit_type]: id=BMR_Ghost_Master_Bowman, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Master_Bowman.cfg:4
 msgid "Ghost Master Bowman"
-msgstr ""
+msgstr "Szellem mesteríjász"
 
 #. [unit_type]: id=BMR_Ghost_Outlaw, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:4
 msgid "Ghost Outlaw"
-msgstr ""
+msgstr "Szellem törvényenkívüli"
 
 #. [female]
 #: Bad_Moon_Rising/units/ghosts/Ghost_Outlaw.cfg:107
 msgid "female^Outlaw"
-msgstr ""
+msgstr "Törvényen kívüli nő"
 
 #. [unit_type]: id=BMR_Ghost_Steelclad, race=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts/Ghost_Steelclad.cfg:4
 msgid "Ghost Steelclad"
-msgstr ""
+msgstr "Törp vértes szellem"
 
 #. [race]: id=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts_race.cfg:6
 msgid "race^Ghost"
-msgstr ""
+msgstr "Szellem"
 
 #. [race]: id=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts_race.cfg:7
 msgid "race+female^Ghost"
-msgstr ""
+msgstr "Szellem"
 
 #. [race]: id=bmr_ghost
 #: Bad_Moon_Rising/units/ghosts_race.cfg:8
 msgid "race^Ghosts"
-msgstr ""
+msgstr "Szellemek"
 
 #. [scenario]: id=ZZ_error
 #: Bad_Moon_Rising/utils/ZZ_error.cfg:4
