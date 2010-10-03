@@ -1,0 +1,1954 @@
+#textdomain wesnoth-Bad_Moon_Rising
+
+
+# this is not for skirmish, per se, but I think here is a good place for it.
+
+#define BMR_HERO_DEATHS
+        [event]
+        name=last breath
+            [filter]
+            id=Lorenzon
+            [/filter]
+        [message]
+        speaker=unit
+        message= _ "What a dumb way to die..."
+        [/message]
+            [endlevel]
+                result=defeat
+            [/endlevel]
+        [/event]
+        [event]
+        name=last breath
+            [filter]
+            id=Belleros
+            [/filter]
+        [message]
+        speaker=unit
+        message= _ "Oof..."
+        [/message]
+            [endlevel]                
+                result=defeat
+            [/endlevel]
+        [/event]
+        [event]
+        name=last breath
+            [filter]
+            id=Raenna
+            [/filter]
+        [message]
+        speaker=unit
+        message= _ "Ack..."
+        [/message]
+            [endlevel]
+                result=defeat
+            [/endlevel]
+        [/event]
+        [event]
+        name=last breath
+            [filter]
+            id=Carghanna
+            [/filter]
+        [message]
+        speaker=unit
+        message= _ "Ouch..."
+        [/message]
+            [endlevel]
+                result=defeat
+            [/endlevel]
+        [/event]
+        [event]
+        name=last breath
+            [filter]
+            id=Duval
+            [/filter]                  
+       [message]
+        speaker=unit
+        message= _ "Ouch..."
+        [/message]
+            [endlevel]
+                result=defeat
+            [/endlevel]
+        [/event]
+#enddef
+
+
+
+# These are macros for the random skirmishes, used in the scenarios#/SkirmishCalls#.cfg
+################################################################
+
+#define BMR_SCATTER_FOES XMIN XMAX YMIN YMAX TYPE NUM SIDE
+# There is a better way to do this, it seems....
+    [store_locations]
+        terrain=Gg,Gs,Ha,Aa,Gs^Fp,Aa^Fpa,Re
+	x={XMIN}-{XMAX}
+        y={YMIN}-{YMAX}
+	[not]
+	    [filter]
+	    [/filter]
+	[/not]
+	[not]
+	    [filter_adjacent_location] 
+		[filter]
+		[/filter]
+	    [/filter_adjacent_location] 
+	[/not]
+    variable=foe_locations
+    [/store_locations]
+    {VARIABLE units_to_place {NUM}}
+
+    [while]
+        [variable]
+            name=units_to_place
+            greater_than=0
+        [/variable]
+
+        [do]
+            [set_variable]
+                name=random_subscript
+                rand=1..$foe_locations.length
+            [/set_variable]
+            {VARIABLE_OP random_subscript add -1}
+
+            [unit]
+                x,y=$foe_locations[$random_subscript].x,$foe_locations[$random_subscript].y
+		type={TYPE}
+		side={SIDE}
+		generate_name=yes
+#### experimental### Doesn't work.  How am I supposed to reference a given variable?  vars.myvariable or vars[#]?
+# 
+#		[ai]
+# formula = "if(vars[index] = 1, end, 
+#	      if(unit_at( desired_path[0] ),
+#                if( desired_path.size > 1,move_partial(me.loc,desired_path[1]),end),
+#               move_partial(me.loc,desired_path[0])
+#	      )
+# where desired_path = shortest_path( me.loc, me.vars.escape )
+# where index = index_of(should_run, vars)"
+#		[var]
+#		escape="loc(1,1)"
+#		[/var]
+#		formula="if(vars.should_run = 1, move(me.loc, loc(1, 1)), fallback(''))"
+#		[/ai]
+#        ), 
+#	fallback('') )
+##################
+	    [/unit]
+
+            [store_locations]
+                find_in=foe_locations
+                [not]
+                    x,y=$foe_locations[$random_subscript].x,$foe_locations[$random_subscript].y
+                [/not]
+                variable=foe_locations
+            [/store_locations]
+
+           [if]
+                [variable]
+                    name=foe_locations.length
+                    less_than=1
+                [/variable]
+
+                [then]
+                    {VARIABLE units_to_place 0}
+                [/then]
+            [/if]
+            {VARIABLE_OP units_to_place add -1}
+	[/do]
+    [/while]
+	{CLEAR_VARIABLE units_to_place}
+	{CLEAR_VARIABLE random_subscript}
+	{CLEAR_VARIABLE foe_locations}
+
+#enddef
+
+#define BMR_RECALL_STRENGTH
+# stores and counts the number of level 2 and 3 units on recall list
+# a separate macro so it can used with Astreya.
+	[store_unit]
+	    [filter]
+		side=1
+		x,y=recall,recall
+	    [/filter]
+	    variable=recall_list_temp
+	    kill=no
+	[/store_unit]
+	[set_variable]
+	    name=index_temp
+	    value=0
+	[/set_variable]
+	[set_variable]
+	    name=recallstrength
+	    value=0
+	[/set_variable]
+	[while]
+	    [variable]
+		name=index_temp
+		less_than=$recall_list_temp.length
+	    [/variable]
+	    [do]
+		[set_variable]
+		    name=recall_strength_temp
+		    value=$recall_list_temp[$index_temp].level
+		[/set_variable]
+		[set_variable]
+		    name=recall_strength_temp
+		    add=-1
+		[/set_variable]
+		[if]
+		    [variable]
+			name=recall_strength_temp
+			less_than=0
+		    [/variable]
+		    [then]
+			[set_variable]
+			    name=recall_strength_temp
+			    value=0
+			[/set_variable]
+		    [/then]
+		[/if]
+		[set_variable]
+		    name=recallstrength
+		    add=$recall_strength_temp
+		[/set_variable]
+		[set_variable]
+		    name=index_temp
+		    add=1
+		[/set_variable]
+	    [/do]
+	[/while]
+	{CLEAR_VARIABLE recall_list_temp}
+	{CLEAR_VARIABLE recall_strength_temp}
+	{CLEAR_VARIABLE index_temp}
+# so recallstrength is not negative
+	[if]
+	    [variable]
+		name=recallstrength
+		less_than=0
+	    [/variable]
+		[then]
+		[set_variable]
+		    name=recallstrength
+		    value=0
+		[/set_variable]
+		[/then]
+	[/if]
+#enddef
+
+
+
+#define BMR_SKIRMISH_FOES NUMBER INDEX
+# macro to set up the skirmish foes
+# has entries for orcs, humans, primeval, khthon (though not useful ATM)
+#	should probably add undead at some point
+# NUMBER is number of foes
+# INDEX is a number used to choose specific unit groups
+
+	[event]
+	name=prestart
+	[set_variable]
+	name=skindex
+	value={INDEX}
+	[/set_variable]
+	[store_unit]
+	    [filter]
+		id=Leader
+	    [/filter]
+	    kill=no
+	    variable=leaderkind
+	[/store_unit]
+ # decisions of what the enemy troops should be
+	    [switch]
+		variable=leaderkind.race
+		[case]
+		    value="orc"
+ # OK, so it's orcs.  But how tough are they?
+		    [switch]
+			variable=skindex
+			[case]
+			value=0
+			[set_variable]
+			name=foetype1
+			value=Orcish Archer
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Goblin Spearman
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Archaic_Orcish Grunt
+			[/set_variable]
+			[/case]			
+			[case]
+			value=1
+			[set_variable]
+			name=foetype1
+			value=Orcish Archer
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Goblin Spearman
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Wolf Rider
+			[/set_variable]
+			[/case]			
+			[case]
+			value=2
+			[set_variable]
+			name=foetype1
+			value=Orcish Assassin
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Archaic_Orcish Grunt
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Wolf Rider
+			[/set_variable]
+			[/case]			
+			[case]
+			value=3
+			[set_variable]
+			name=foetype1
+			value=Orcish Assassin
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Archaic_Orcish Grunt
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Orcish Rider
+			[/set_variable]
+			[/case]			
+			[case]
+			value=4
+			[set_variable]
+			name=foetype1
+			value=Orcish Crossbowman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Raider
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Goblin Knight
+			[/set_variable]
+			[/case]			
+			[case]
+			value=5
+			[set_variable]
+			name=foetype1
+			value=Orcish Crossbowman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Warrior
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Goblin Knight
+			[/set_variable]
+			[/case]			
+			[case]
+			value=6
+			[set_variable]
+			name=foetype1
+			value=Orcish Slayer
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Warrior
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Orcish Cavalry
+			[/set_variable]
+			[/case]			
+			[case]
+			value=7
+			[set_variable]
+			name=foetype1
+			value=Goblin Pillager
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Warrior
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Orcish Cavalry
+			[/set_variable]
+			[/case]			
+			[case]
+			value=8
+			[set_variable]
+			name=foetype1
+			value=Orcish Slayer
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Warrior
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Goblin Pillager
+			[/set_variable]
+			[/case]			
+			[case]
+			value=9
+			[set_variable]
+			name=foetype1
+			value=Orcish Cavalry
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Maurader
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Goblin Pillager
+			[/set_variable]
+			[/case]			
+			[case]
+			value=10
+			[set_variable]
+			name=foetype1
+			value=Orcish Crossbowman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Warrior
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Orcish Cavalry
+			[/set_variable]
+			[/case]			
+			[case]
+			value=11
+			[set_variable]
+			name=foetype1
+			value=Orcish Crossbowman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Maurader
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Orcish Cavalry
+			[/set_variable]
+			[/case]			
+			[else]
+			[set_variable]
+			name=foetype1
+			value=Orcish Crossbowman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Orcish Maurader
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Orcish Cavalry
+			[/set_variable]
+			[/else]			
+		    [/switch]			
+		[/case]
+		[case]
+		    value="human"
+ # OK, so it's humans.  But how tough are they?
+		    [switch]
+			variable=skindex
+			[case]
+			value=1
+			[set_variable]
+			name=foetype1
+			value=Woodsman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Footpad
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Ruffian
+			[/set_variable]
+			[/case]			
+			[case]
+			value=2
+			[set_variable]
+			name=foetype1
+			value=Spearman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Woodsman
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Footpad
+			[/set_variable]
+			[/case]			
+			[case]
+			value=3
+			[set_variable]
+			name=foetype1
+			value=Spearman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Bowman
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Horseman
+			[/set_variable]
+			[/case]			
+			[case]
+			value=4
+			[set_variable]
+			name=foetype1
+			value=Cavalryman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Spearman
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Longbowman
+			[/set_variable]
+			[/case]			
+			[case]
+			value=5
+			[set_variable]
+			name=foetype1
+			value=Dragoon
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Spearman
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Longbowman
+			[/set_variable]
+			[/case]			
+			[case]
+			value=6
+			[set_variable]
+			name=foetype1
+			value=Swordsman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Dragoon
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Longbowman
+			[/set_variable]
+			[/case]			
+			[case]
+			value=7
+			[set_variable]
+			name=foetype1
+			value=Pikeman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Knight
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Longbowman
+			[/set_variable]
+			[/case]			
+			[case]
+			value=8
+			[set_variable]
+			name=foetype1
+			value=Pikeman
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Knight
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Javelineer
+			[/set_variable]
+			[/case]			
+		    [/switch]			
+		[/case]
+		[case]
+		    value="primeval"
+ # OK, so it's primevals.  But how tough are they?
+		    [switch]
+			variable=skindex
+			[case]
+			value=1
+			[set_variable]
+			name=foetype1
+			value=Primeval Swiftfoot
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Primeval Slow
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Primevalist Fighter
+			[/set_variable]
+			[/case]			
+			[case]
+			value=2
+			[set_variable]
+			name=foetype1
+			value=Primeval Swiftfoot
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Primevalist Fighter
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Primevalist Follower
+			[/set_variable]
+			[/case]			
+			[case]
+			value=3
+			[set_variable]
+			name=foetype1
+			value=Primevalist Fighter
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Primevalist Monk
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Primeval Striker
+			[/set_variable]
+			[/case]			
+			[case]
+			value=4
+			[set_variable]
+			name=foetype1
+			value=Primevalist Monk
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Primeval Driver
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Primeval Striker
+			[/set_variable]
+			[/case]			
+			[case]
+			value=5
+			[set_variable]
+			name=foetype1
+			value=Primevalist Fanatic
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Primeval Driver
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Primeval Ironwheel
+			[/set_variable]
+			[/case]			
+			[else]
+			[set_variable]
+			name=foetype1
+			value=Primeval Striker
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Primeval Driver
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Primeval Ironwheel
+			[/set_variable]
+			[/else]			
+		    [/switch]			
+		[/case]
+		[case]
+		    value="khthon"
+ # OK, so it's khthon.  But how tough are they?
+ # this needs to be fixed, when they have more unit types
+ # ... Took a first pass at that
+		    [switch]
+			variable=skindex
+			[case]
+			value=1
+			[set_variable]
+			name=foetype1
+			value=Terrapin
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Horse
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Yak
+			[/set_variable]
+			[/case]			
+			[case]
+			value=2
+			[set_variable]
+			name=foetype1
+			value=Ram
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Arctic Wolf
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Yak
+			[/set_variable]
+			[/case]			
+			[case]
+			value=3
+			[set_variable]
+			name=foetype1
+			value=Katoblepon
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Arctic Wolf
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Ophis
+			[/set_variable]
+			[/case]			
+			[case]
+			value=4
+			[set_variable]
+			name=foetype1
+			value=Katoblepon
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Prokyon
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Ophis
+			[/set_variable]
+			[/case]			
+			[else]
+			[set_variable]
+			name=foetype1
+			value=Ophis-Magnum
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value=Pegusa
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value=Pyradalon
+			[/set_variable]
+			[/else]			
+		    [/switch]			
+		[/case]
+		[case]
+		    value="despair"
+ # 		    value="undead"
+ # This is for Astreya and the phantoms, though undead also worked?
+		    [switch]
+			variable=skindex
+			[case]
+			value=1
+			[set_variable]
+			name=foetype1
+			value="Phantom Cloak"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Unease"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Rider"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=2
+			[set_variable]
+			name=foetype1
+			value="Phantom Cloak"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Spearman"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Rider"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=3
+			[set_variable]
+			name=foetype1
+			value="Phantom Widow"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Spearman"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Horseman"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=4
+			[set_variable]
+			name=foetype1
+			value="Phantom Shadow"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Horseman"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Widow"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=5
+			[set_variable]
+			name=foetype1
+			value="Phantom Shadow"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Horseman"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Soldier"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=6
+			[set_variable]
+			name=foetype1
+			value="Phantom White"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Horseman"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Soldier"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=7
+			[set_variable]
+			name=foetype1
+			value="Phantom Shadow"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom White"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Soldier"
+			[/set_variable]
+			[/case]			
+			[case]
+			value=8
+			[set_variable]
+			name=foetype1
+			value="Phantom Shadow"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Horseman"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Midnight"
+			[/set_variable]
+			[/case]			
+			[else]
+			[set_variable]
+			name=foetype1
+			value="Phantom Midnight"
+			[/set_variable]
+			[set_variable]
+			name=foetype2
+			value="Phantom Dullohan"
+			[/set_variable]
+			[set_variable]
+			name=foetype3
+			value="Phantom Soldier"
+			[/set_variable]
+			[/else]			
+		    [/switch]			
+		[/case]
+	    [/switch]
+	[set_variable]
+	name=foes1
+	random=2..{NUMBER}
+	[/set_variable]	
+	[set_variable]
+	name=foes2
+	random=1..{NUMBER}
+	[/set_variable]	
+	[set_variable]
+	name=foes3
+	random=1..{NUMBER}
+	[/set_variable]	
+	{SCATTER_IMAGE (terrain=Aa) $foes1 scenery/pine1.png}
+	{SCATTER_IMAGE (terrain=Gg) $foes2 scenery/rock2.png}
+# these ranges are hardcoded, you may want to change that...
+	{BMR_SCATTER_FOES 1 20 1 17 $foetype1 $foes1 2}
+	{BMR_SCATTER_FOES 1 20 1 17 $foetype2 $foes2 2}
+	{BMR_SCATTER_FOES 1 20 1 17 $foetype3 $foes3 2}
+
+# buff up the enemy as the player's recall list is stronger
+	{BMR_RECALL_STRENGTH}
+	[store_unit]
+	    [filter]
+		side=2
+	    [/filter]
+	    kill=yes
+	    variable=tobuff
+	[/store_unit]
+	[set_variable]
+	    name=index_temp
+	    value=0
+	[/set_variable]
+	    [while]
+		[variable]
+		    name=index_temp
+		    less_than=$tobuff.length
+		[/variable]
+		[do]
+		    [if]
+			[variable]
+			    name=recallstrength
+			    less_than=1
+			[/variable]
+# just unstore the enemy unit
+			[then]
+		    [unstore_unit]
+			variable=tobuff[$index_temp]
+			find_vacant=no
+		    [/unstore_unit]
+			[/then]
+			[else]
+# for testing
+#		    [set_variable]
+#			name=tobuff[$index_temp].name
+#			value="name $recallstrength|"
+#		    [/set_variable]
+#
+# store the level before advancement
+		    [set_variable]
+			name=tobuff_level_temp
+			value=$tobuff[$index_temp].level
+		    [/set_variable]
+		    [set_variable]
+			name=tobuff[$index_temp].experience
+			value=$tobuff[$index_temp].max_experience
+		    [/set_variable]
+		    [unstore_unit]
+			variable=tobuff[$index_temp]
+			find_vacant=no
+			advance=true
+		    [/unstore_unit]
+# if the guy did not advance, give some more effects
+		    [store_unit]
+			[filter]
+			x,y=$tobuff[$index_temp].x,$tobuff[$index_temp].y
+			[/filter]
+			kill=no
+			variable=tobuff2
+		    [/store_unit]			
+			    [if]
+			        [variable]
+				    name=tobuff_level_temp
+				    numerical_equals=$tobuff2.level
+				[/variable]
+				[then]
+				    [object]
+					duration=level
+					[filter]
+					x,y=$tobuff[$index_temp].x,$tobuff[$index_temp].y
+					[/filter]
+					silent=yes
+				        [effect]
+					    apply_to=attack
+# for testing
+#					    set_description=$tobuff2.type
+					    range=melee
+					    increase_damage=40%
+					[/effect]
+				        [effect]
+					    apply_to=attack
+					    range=ranged
+					    increase_damage=30%
+					[/effect]
+				        [effect]
+					    apply_to=hitpoints
+					    increase_total=50%
+					    heal_full=yes
+					[/effect]
+				    [/object]
+				[/then]			
+				[else]
+				    [object]
+					duration=level
+					[filter]
+					x,y=$tobuff[$index_temp].x,$tobuff[$index_temp].y
+					[/filter]
+					silent=yes
+				        [effect]
+					    apply_to=attack
+# for testing
+#					    set_description=$tobuff_level_temp
+					    range=melee
+					    increase_damage=30%
+					[/effect]
+				        [effect]
+					    apply_to=attack
+					    range=ranged
+					    increase_damage=20%
+					[/effect]
+				        [effect]
+					    apply_to=hitpoints
+					    increase_total=30%
+					    heal_full=yes
+					[/effect]
+				    [/object]
+				[/else]
+			    [/if]
+# clear the checks for advancement
+			{CLEAR_VARIABLE tobuff2}
+			{CLEAR_VARIABLE tobuff_level_temp}
+		    [set_variable]
+			name=recallstrength
+			add=-2
+		    [/set_variable]
+			[/else]
+		    [/if]
+		    [set_variable]
+			name=index_temp
+			add=1
+		    [/set_variable]
+		[/do]
+	    [/while]
+
+		
+	{CLEAR_VARIABLE foes1}
+	{CLEAR_VARIABLE foes2}
+	{CLEAR_VARIABLE foes3}
+	{CLEAR_VARIABLE foetype1}
+	{CLEAR_VARIABLE foetype2}
+	{CLEAR_VARIABLE foetype3}
+	{CLEAR_VARIABLE skindex}
+	{CLEAR_VARIABLE leaderkind}
+	{CLEAR_VARIABLE recallstrength}
+	{CLEAR_VARIABLE tobuff}
+	[/event]
+
+
+#enddef
+
+#define BMR_SK_GRADING
+# this will use BMR_SKIRMISH_FOES to make the enemies harder as the player's purse is bigger.  
+# $sideone.gold should be defined by the time this is called.
+# $timesfought should also be defined, a variable incremented every time the player has a skirmish
+# $timesfought should be defined in one of the off-road macros in the worldmap.cfg
+# before we can use this, there needs to be a variable for the recall list... defined above, 
+# and included in BMR_SKIRMISH_FOES.  Keep it out of the skirmish generating macro so that it does not
+# get included in Astreya's scenarios.
+	[event]
+	name=prestart
+	[set_variable]
+	    name=goldtest
+	    value=250
+	[/set_variable]
+	[set_variable]
+	    name=sknumber
+	    value=$timesfought
+	[/set_variable]
+# now that variables are floating-point, this ruins things...
+# When I figure out how to fix this, I will change initial value of goldtest
+#	[set_variable]
+#	    name=sknumber
+#	    multiply=0.5
+#	[/set_variable]
+	[set_variable]
+	    name=skindex0
+	    value=$sknumber
+	[/set_variable]
+	[set_variable]
+	    name=sknumber
+	    multiply=3
+	[/set_variable]
+	[while]
+	    [variable]
+		name=goldtest
+		less_than=$sideone.gold
+	    [/variable]
+	    [do]
+	    [set_variable]
+		name=skindex0
+		add=1
+	    [/set_variable]
+	    [set_variable]
+		name=goldtest
+		add=300
+	    [/set_variable]
+	    [/do]
+	[/while]
+	{CLEAR_VARIABLE goldtest}
+# initialized here, used during recalls
+	[set_variable]
+	name=sk_recallcost
+	value=0
+	[/set_variable]
+	[/event]
+
+	[event]
+	name=recall
+	first_time_only=no
+	    [filter]
+		side=1
+	    [/filter]
+	[set_variable]
+	name=sk_recallcost2
+	value=$sk_recallcost
+	[/set_variable]
+	[set_variable]
+	name=sk_recallcost2
+	multiply=$skindex0
+	[/set_variable]
+	[set_variable]
+	name=sk_recallcost
+	add=5
+	[/set_variable]
+	[gold]
+	side=1
+	amount=-$sk_recallcost2
+	[/gold]
+# because the recall cost is still there
+	[set_variable]
+	name=sk_recallcost2
+	add=20
+	[/set_variable]
+	[print]
+	    text= _ "Recall Cost: $sk_recallcost2|g"
+	    size=24
+	    red,green,blue=255,70,70
+	    duration=120
+	[/print]
+	{CLEAR_VARIABLE sk_recallcost2}
+	[/event]
+
+	{BMR_SKIRMISH_FOES $sknumber $skindex0} 
+
+#enddef
+
+#define BMR_SK_VICTORY
+# So that the skirmishes can serve a purpose, aside from experience
+# And restoring the purse
+# you might want to change sideone to an input so that other sides can be used
+
+
+# I'm changing this...
+# the victory gold prize, for when the player wins
+#	[event]
+#	name=start
+#	[set_variable]
+#	name=sk_prize
+#	rand=25,62,71,83,106,121,132,154,167,191,214,221,232,250,264,276,288,300,302,312,320,334,355,363,376,388
+#	[/set_variable]
+#	[/event]
+	[event]
+	name=prestart
+	    [set_variable]
+		name=sk_prize
+		value=0
+	    [/set_variable]
+	[/event]
+
+	[event]
+	name=die
+	first_time_only=no
+	    [filter]
+		side=2
+	    [/filter]
+	    [filter_second]
+		side=1
+	    [/filter_second]
+		[set_variable]
+			name=sk_prize_TEMP
+			value=$second_unit.level
+		[/set_variable]
+	    [switch]
+		variable=second_unit.race
+		[case]
+		    value=orc
+		    [set_variable]
+			name=sk_prize_TEMP
+			multiply=18
+		    [/set_variable]
+		    [set_variable]
+			name=sk_prize
+			add=$sk_prize_TEMP
+		    [/set_variable]
+		    {CLEAR_VARIABLE sk_prize_TEMP}
+		[/case]
+		[case]
+		    value=human
+		    [set_variable]
+			name=sk_prize_TEMP
+			multiply=19
+		    [/set_variable]
+		    [set_variable]
+			name=sk_prize
+			add=$sk_prize_TEMP
+		    [/set_variable]
+		    {CLEAR_VARIABLE sk_prize_TEMP}
+		[/case]
+		[case]
+		    value=despair
+		    [set_variable]
+			name=sk_prize_TEMP
+			multiply=20
+		    [/set_variable]
+		    [set_variable]
+			name=sk_prize
+			add=$sk_prize_TEMP
+		    [/set_variable]
+		    {CLEAR_VARIABLE sk_prize_TEMP}
+		[/case]
+		[case]
+		    value=primeval
+		    [set_variable]
+			name=sk_prize_TEMP
+			multiply=21
+		    [/set_variable]
+		    [set_variable]
+			name=sk_prize
+			add=$sk_prize_TEMP
+		    [/set_variable]
+		    {CLEAR_VARIABLE sk_prize_TEMP}
+		[/case]
+		[case]
+		    value=orc
+		    [set_variable]
+			name=sk_prize_TEMP
+			multiply=18
+		    [/set_variable]
+		    [set_variable]
+			name=sk_prize
+			add=$sk_prize_TEMP
+		    [/set_variable]
+		    {CLEAR_VARIABLE sk_prize_TEMP}
+		[/case]
+	    [/switch]
+	[/event]
+
+        [event]
+        name=die
+        first_time_only=no
+            [filter]
+                side=2
+            [/filter]
+            [if]
+                [have_unit]
+                    side=2
+                [/have_unit]
+		[else]
+     		{VARIABLE_OP sideone.gold add $sk_prize}
+		[message]
+		side=1
+		message= _ "They had some resources, we are $sk_prize|g richer.  And we gained some valuable combat experience."
+		[/message]
+		[allow_recruit]
+		side=1
+		type=Ukian Runner, Ukian Archer, Ukian Regular, Ukian Dog
+		[/allow_recruit]
+    [store_unit]
+        [filter]
+            side=1
+		[not]
+		    x,y=recall,recall
+		[/not]
+        [/filter]
+        variable=MODIFY_UNIT_store
+        kill=yes
+    [/store_unit]
+    [set_variable]
+	name=sk_prize_exp
+	value=0.1
+    [/set_variable]
+    [set_variable]
+	name=sk_prize_exp
+	multiply=$sk_prize
+    [/set_variable]
+
+    {FOREACH MODIFY_UNIT_store MODIFY_UNIT_i}
+        [set_variable]
+            name=MODIFY_UNIT_store[$MODIFY_UNIT_i].experience
+            add=$sk_prize_exp
+        [/set_variable]
+        [unstore_unit]
+            variable=MODIFY_UNIT_store[$MODIFY_UNIT_i]
+            find_vacant=no
+        [/unstore_unit]
+    {NEXT MODIFY_UNIT_i}
+
+    {CLEAR_VARIABLE MODIFY_UNIT_store}
+	[message]
+	    speaker=narrator
+	    message = _ "$sk_prize_exp| experience gained."
+	    image = wesnoth-icon.png
+	[/message]
+    {CLEAR_VARIABLE sk_prize_exp}
+
+
+ # restore the gold - don't use this anymore
+#		    [gold]
+#			side=1
+#			amount=$sideone.gold
+#		    [/gold]
+		    [gold]
+			side=1
+			amount=$sk_prize
+		    [/gold]
+		    {CLEAR_VARIABLE sideone}
+                    [endlevel]
+			{CONTINUE}
+                    [/endlevel]
+                [/else]
+            [/if]
+        [/event]
+
+        [event]
+        name=new turn
+        first_time_only=no
+            [if]
+                [have_unit]
+                    side=2
+                [/have_unit]
+		[else]
+# what was I doing with this?
+#     		{VARIABLE_OP sideone.gold add $sk_prize}
+		[message]
+		side=1
+		message= _ "They had some resources, we are $sk_prize|g richer.  We also gained some combat experience."
+		[/message]
+    [store_unit]
+        [filter]
+            side=1
+		[not]
+		    x,y=recall,recall
+		[/not]
+        [/filter]
+        variable=MODIFY_UNIT_store
+        kill=yes
+    [/store_unit]
+    [set_variable]
+	name=sk_prize_exp
+	value=0.1
+    [/set_variable]
+    [set_variable]
+	name=sk_prize_exp
+	multiply=$sk_prize
+    [/set_variable]
+
+    {FOREACH MODIFY_UNIT_store MODIFY_UNIT_i}
+        [set_variable]
+            name=MODIFY_UNIT_store[$MODIFY_UNIT_i].experience
+            add=$sk_prize_exp
+        [/set_variable]
+        [unstore_unit]
+            variable=MODIFY_UNIT_store[$MODIFY_UNIT_i]
+            find_vacant=no
+        [/unstore_unit]
+    {NEXT MODIFY_UNIT_i}
+
+    {CLEAR_VARIABLE MODIFY_UNIT_store}
+	[message]
+	    speaker=narrator
+	    message = _ "$sk_prize_exp| experience gained."
+	    image = wesnoth-icon.png
+	[/message]
+    {CLEAR_VARIABLE sk_prize_exp}
+		[allow_recruit]
+		side=1
+		type=Ukian Runner, Ukian Archer, Ukian Regular, Ukian Dog
+		[/allow_recruit]
+		    [gold]
+			side=1
+			amount=$sk_prize
+		    [/gold]
+		    {CLEAR_VARIABLE sideone}
+                    [endlevel]
+			{CONTINUE}
+                    [/endlevel]
+                [/else]
+            [/if]
+        [/event]
+
+#enddef
+
+#define BMR_ENEMY_FLEE FACTOR
+# if FAI is working, this will tell the enemy it is time to flee
+# it will be used in the skirmish creating scenarios, so that it doesn't get
+# placed in Astreya's scenarios
+	[event]
+	name=new turn
+	first_time_only=no
+	   [store_unit]
+		[filter]
+		side=1
+		    [not]
+			x,y=recall,recall
+		    [/not]
+		[/filter]
+		variable=units_side1
+		kill=no
+	   [/store_unit]
+	   [store_unit]
+		[filter]
+		side=2
+		[/filter]
+		variable=units_side2
+		kill=no
+	   [/store_unit]
+	[set_variable]
+	name=index_side1
+	value=0
+	[/set_variable]
+	[set_variable]
+	name=strength_side1
+	value=0
+	[/set_variable]
+	[while]
+	    [variable]
+		name=index_side1
+		less_than=$units_side1.length
+	    [/variable]
+	    [do]
+		[set_variable]
+		name=strength_side1
+		add=$units_side1[$index_side1].level
+		[/set_variable]
+		[set_variable]
+		name=index_side1
+		add=1
+		[/set_variable]
+	    [/do]
+	[/while]	
+	[set_variable]
+	name=index_side2
+	value=0
+	[/set_variable]
+	[set_variable]
+	name=strength_side2
+	value=0
+	[/set_variable]
+	[while]
+	    [variable]
+		name=index_side2
+		less_than=$units_side2.length
+	    [/variable]
+	    [do]
+		[set_variable]
+		name=strength_side2
+		add=$units_side2[$index_side2].level
+		[/set_variable]
+		[set_variable]
+		name=index_side2
+		add=1
+		[/set_variable]
+	    [/do]
+	[/while]	
+	[set_variable]
+	name=strength_side1
+# this could be adjusted for difficulty...
+	multiply={FACTOR}
+	[/set_variable]
+	[if]
+	    [variable]
+		name=strength_side2
+		less_than=$strength_side1
+	    [/variable]
+	    [then]
+		[set_variable]
+		name=should_run
+		value=1
+		[/set_variable]
+	    [/then]
+	[/if]
+	[/event]
+
+	[event]
+	name=moveto
+	first_time_only=no
+	    [filter]
+		side=2
+		x=1-2
+	    [/filter]
+	    [kill]
+		x,y=$x1,$y1
+	    [/kill]
+	[fire_event]
+	    name=bmr_sk_victory
+	[/fire_event]
+	[/event]
+
+
+# FAI related stuff
+
+[event]
+    name=ai turn
+    first_time_only=no
+    [if]
+	[variable]
+	name=side_number
+	numerical_equals=2
+	[/variable]
+	[then]
+	    [if]
+	    [variable]
+		name=should_run
+		numerical_equals=1
+	    [/variable]
+		[then]
+	    	[fire_event]
+			name=ai_retreat_start
+	    	[/fire_event]
+		[/then]
+		[else]
+	    	[fire_event]
+			name=ai_retreat_stop
+	    	[/fire_event]
+		[/else]
+	    [/if]
+	[/then]
+    [/if]
+[/event]
+
+[event]
+# taken from Crab's post on the Coder's Corner forum, with some very small changes
+    name=ai_retreat_start
+    # 'main_loop' is the id of the stage from data/ai/ais/testing_ai_default.cfg
+    {MODIFY_AI_ADD_CANDIDATE_ACTION 2 main_loop (
+       [candidate_action]
+             #   this is the ID we refer when deleting this candidate action in the ai_retreat_stop event
+             id=retreat_to_map_edge
+             #    this is fai-specific stuff - a name of the action. just set it to same thing as id
+             name=retreat_to_map_edge
+             #   we use fai to parse this config block
+             engine=fai
+             #  this is fai-specific stuff - a type of the action. in this case,  this is a movement candidate action. all units which still can move, are considered
+             type=movement
+             #   Just a bit less-priority thing than combat. Use {AI_CA_GOTO_SCORE}+10  to make the retreat happen even before gotos are considered.
+             #   this is "WHEN". the action is considered for execution if we return priority >0, highest-priority action is taken
+             #   the intent of the formula is "if we can make a move closer to location, return good score, else return 0"
+             evaluation="if(next_hop(me.loc,loc(1,me.loc.y))=null,0,if(unit_at(next_hop(me.loc,loc(1,me.loc.y)))=null, {AI_CA_COMBAT_SCORE}+10,0))"
+             #   the above line is working around a bug, which'll be fixed in 1.7.12, after that the line below will work, too
+             #   evaluation="if(unit_at(next_hop(me.loc,loc(1,1)))=null, {AI_CA_COMBAT_SCORE}-10 ,0)"     
+             #   this is "WHAT TO DO"
+             action="move(me.loc,next_hop(me.loc,loc(1,me.loc.y)))"
+       [/candidate_action]
+    )}
+[/event]
+
+[event]
+    name=ai_retreat_stop
+    #    we reference the id of the above candidate action, which is part of 'main_loop' stage of the ai.
+    {MODIFY_AI_DELETE_CANDIDATE_ACTION 2 main_loop retreat_to_map_edge}
+[/event]
+
+#enddef		
+#define BMR_DISALLOW_RECRUIT TYPE
+
+     [event]
+	name=recruit
+	first_time_only=no
+	    [filter]
+		side=1
+		type={TYPE}
+	    [/filter]
+	[disallow_recruit]
+	    side=1
+	    type={TYPE}
+	[/disallow_recruit]
+     [/event]
+
+#enddef
+
+#define BMR_SKIRMISH_START SKID PLAYERID FOETYPE NEXT MAP_WML ACTION_WML
+# this establishes the start of a skirmish scenario, the player and foe sides, and the next scenario
+# MAP_WML would the generator and schedules macros
+# ACTION_WML would be the talking and enemy generation
+###################check this########################
+
+[scenario]
+    name= _ "Skirmish"
+    id={SKID}
+    map_generation=default
+    next_scenario={NEXT}
+    victory_when_enemies_defeated=no
+    {TURNS 22 20 18}
+    [music]
+	name=northerners-classic.ogg
+    [/music]
+
+    {MAP_WML}
+
+    [event]
+	name=prestart
+		[objectives]
+		side=1
+			[objective]
+			condition=win
+			description=_ "Defeat all enemy units"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Death of {PLAYERID}"
+			[/objective]
+			[objective]
+			condition=lose
+			description=_ "Time Runs Out"
+			[/objective]
+			note= _ "Forces are spread out when moving, so you are very limited in getting new recruits.  Your veterans are also spread out, so it becomes increasingly more expensive to send word to them that they are needed."
+		[/objectives]
+    [/event]
+
+    [side]
+	type=Lieutenant
+	id={PLAYERID}
+        side=1
+        canrecruit=yes
+	controller=human
+        fog=no
+	recruit=
+	{GOLD 60 60 60}
+    [/side]
+
+    [side]
+	type={FOETYPE}
+	id=Leader
+	name=_ "Enemy Leader"
+	side=2
+	canrecruit=yes
+	fog=no
+	{ai/aliases/stable_singleplayer.cfg}
+# I may allow them to recruit, need to think about this...
+#	recruit=
+#	{GOLD 200 250 300}
+#	{INCOME 4 6 8}
+#	ai_algorithm=formula_ai
+	[ai]
+#            version=10703
+#            [stage]
+#                engine=fai
+#                name=unit_formulas
+#            [/stage]
+	aggression=0.3
+	grouping=offesnive
+	protect_leader=3.0
+	protect_leader_radius=5
+	[/ai]
+     [/side]
+
+# limiting the possible recall
+# I had it set to 60 gold (3 units), but that gets too difficult when facing level 2 enemies.
+# Now trying 80
+     [event]
+     name=prestart
+	[store_side]
+	side=1
+	variable=sideone
+	[/store_side]
+#	[gold]
+#	side=1
+#	amount=-$sideone.gold
+#	[/gold]
+#	[gold]
+#	side=1
+#	amount=80
+#	[/gold]
+	[store_map_dimensions]
+	variable=mapsize
+	[/store_map_dimensions]
+	[set_variable]
+	name=should_run
+	value=0
+	[/set_variable]
+	[/event]
+
+
+{BMR_DISALLOW_RECRUIT "Ukian Archer"}
+{BMR_DISALLOW_RECRUIT "Ukian Runner"}
+{BMR_DISALLOW_RECRUIT "Ukian Regular"}
+{BMR_DISALLOW_RECRUIT "Ukian Dog"}
+	
+#   undef BMR_DISALLOW_RECRUIT
+
+# make the AI not just sit in the keep, but head toward the player
+     [event]
+	name=die
+	first_time_only=no
+	[filter]
+	side=2
+	    [not]
+	    id=Leader
+	    [/not]
+	[/filter]
+	[if]
+	    [have_unit]
+	    side=2
+	    [not]
+	    id=Leader
+	    [/not]
+	    [/have_unit]
+	[else]
+	[store_unit]
+	    [filter]
+	    id={PLAYERID}
+	    [/filter]
+		kill=no
+		variable=playpos
+	[/store_unit]
+	[store_unit]
+	    [filter]
+	    id=Leader
+	    [/filter]
+		kill=no
+		variable=leaderpos
+	[/store_unit]
+	    [if]
+		[variable]
+		name=leaderpos.y
+		less_than=$playpos.y
+		[/variable]
+		[then]
+		[modify_side]
+		side=2
+		[ai]
+		    [leader_goal]
+			x,y=12,1
+		    [/leader_goal]
+		[/ai]
+		[/modify_side]
+		[/then]
+		[else]
+		[modify_side]
+		side=2
+		[ai]
+		    [leader_goal]
+			x,y=12,$mapsize.height
+		    [/leader_goal]
+		[/ai]
+		[/modify_side]
+		[/else]
+	     [/if]
+	{CLEAR_VARIABLE playpos}
+	{CLEAR_VARIABLE leaderpos}
+	[/else]
+	[/if]
+     [/event]
+
+     [event]
+     name=moveto
+	[filter]
+	    id=Leader
+	    y=1,$mapsize.height
+	[/filter]
+	     [message]
+		speaker=Leader
+		message= _ "I'm out of here!"
+	     [/message]
+	     [kill]
+		id=Leader
+	     [/kill]
+	     [message]
+		speaker={PLAYERID}
+		message= _ "That one will bring others, we don't have time to scavenge resources from the dead...  At least we got some combat experience."
+	     [/message]
+    [store_unit]
+        [filter]
+            side=1
+		[not]
+		    x,y=recall,recall
+		[/not]
+        [/filter]
+        variable=MODIFY_UNIT_store
+        kill=yes
+    [/store_unit]
+    [set_variable]
+	name=sk_prize_exp
+	rand=2..10
+    [/set_variable]
+
+#ifdef ___UNUSED___
+
+    {FOREACH MODIFY_UNIT_store MODIFY_UNIT_i}
+        [set_variable]
+            name=MODIFY_UNIT_store[$MODIFY_UNIT_i].experience
+            add=$sk_prize_exp
+        [/set_variable]
+        [unstore_unit]
+            variable=MODIFY_UNIT_store[$MODIFY_UNIT_i]
+            find_vacant=no
+        [/unstore_unit]
+    {NEXT MODIFY_UNIT_i}
+#endif
+
+    {CLEAR_VARIABLE MODIFY_UNIT_store}
+	[message]
+	    speaker=narrator
+	    message = _ "$sk_prize_exp| experience gained."
+	    image = wesnoth-icon.png
+	[/message]
+    {CLEAR_VARIABLE sk_prize_exp}
+		[allow_recruit]
+		side=1
+		type=Ukian Runner, Ukian Archer, Ukian Regular, Ukian Dog
+		[/allow_recruit]
+#		[gold]
+#		    side=1
+#		    amount=$sideone.gold
+#		[/gold]
+	     {CLEAR_VARIABLE sideone}
+                [endlevel]
+		   {CONTINUE}
+                [/endlevel]
+     [/event]
+
+     {ACTION_WML}
+
+     {BMR_SK_VICTORY}
+
+     {BMR_HERO_DEATHS}
+
+     {CLEAR_VARIABLE sideone}
+[/scenario]
+
+#enddef
+
+
+#define BMR_SKIRMISH_TALK ID1 ID2
+# a simple way to have a randomized dialogue at the start of the skirmish
+# ID1 is id of player leader, ID2 is id of player hero
+
+    [event]
+    name=prestart
+	[recall]
+	id={ID2}
+	x,y=
+	[/recall]
+	[set_variable]
+	name=randtalk
+	random=1..7
+	[/set_variable]	
+    [/event]
+
+    [event]
+    name=start
+	[switch]
+	variable=randtalk
+	    [case]
+	    value=1
+		[message]
+		speaker={ID1}
+		message= _ "We should have stayed on the path..."
+		[/message]
+		[message]
+		speaker={ID2}
+		message= _ "You always say that."
+		[/message]
+	    [/case]
+	    [case]
+	    value=2
+		[message]
+		speaker={ID1}
+		message= _ "This is a chance to train our forces."
+		[/message]
+		[message]
+		speaker={ID2}
+		message= _ "That's one way to look at it. "
+		[/message]
+	    [/case]
+	    [case]
+	    value=3
+		[message]
+		speaker={ID2}
+		message= _ "We should have stayed on the path..."
+		[/message]
+		[message]
+		speaker={ID1}
+		message= _ "I'm not laughing."
+		[/message]
+	    [/case]
+	    [case]
+	    value=4
+		[message]
+		speaker={ID1}
+		message= _ "We should have stayed on the path..."
+		[/message]
+		[message]
+		speaker={ID2}
+		message= _ "Indeed."
+		[/message]
+	    [/case]
+	    [case]
+	    value=4
+		[message]
+		speaker={ID1}
+		message= _ "This is a chance to train our forces."
+		[/message]
+		[message]
+		speaker={ID2}
+		message= _ "Do we really have time for this?"
+		[/message]
+		[message]
+		speaker={ID1}
+		message= _ "Not really, so let's get this over with..."
+		[/message]
+	    [/case]
+	    [else]
+		[message]
+		speaker={ID1}
+		message= _ "We should have stayed on the path..."
+		[/message]
+	    [/else]		
+        [/switch]
+	{CLEAR_VARIABLE randtalk}
+    [/event]
+
+#enddef 
+
